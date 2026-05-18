@@ -1,0 +1,237 @@
+.advisors__area .advisors__item .advisors__thumb {
+    text-align: center !important;
+}
+.advisors__area .advisors__item .advisors__thumb img {
+    border-radius: 50%;
+}
+
+.advisors__area .advisors__content {
+    justify-content: center;
+    text-align: center;
+}
+
+.banner__content {
+    width: 100%;
+}
+
+.banner__area .banner__content .title {
+    font-size: 60px;
+}
+
+.banner__area .banner__content .sub-title {
+    font-size: 24px;
+    justify-content: center;
+}
+
+.banner__area .banner__content .banner__btn {
+    justify-content: center;
+}
+
+
+
+.after-hero .section__title .title {
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.after-hero .section__title .sub-title {
+    font-size: 32px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.after-hero .section__title .sub-title-2 {
+    font-size: 20px;
+    white-space: nowrap;
+    margin-top: 30px;
+}
+
+.after-hero .choose__item .choose__content .title {
+    font-size: 24px;
+    text-align: center; 
+}
+
+.after-hero .choose__item .choose__content p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.after-hero .choose__item .choose__icon{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.after-hero .choose__item .choose__icon img{ 
+    width: 15%;
+    margin: auto;
+}
+
+.after-hero .choose__item {
+    padding: 20px 15px 20px;
+    /* height: 250px; */
+}
+
+.banner__btn .tg-btn {
+    /* width: 150px !important; */
+    height: 50px;
+}
+
+.submit__btn .tg-btn {
+    width: 100px !important;
+    height: 40px;
+}
+
+.header-btn .tg-btn {
+    width: 150px !important;
+    height: 40px;
+    border-radius: 7.5px;
+    background: #088747;
+}
+
+.header-btn .tg-btn span {
+    border-radius: inherit;
+    background: #088747;
+}
+
+.tg-btn span {
+    width: inherit !important;
+    place-content: center;
+}
+
+.how-it-works .sub-title {
+    font-size: 30px !important;
+}
+.how-it-works .choose__item .choose__content .title {
+    font-size: 14px !important;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.how-it-works .choose__item h1 {
+    text-align: left;
+    font-size: 28px;
+}
+
+.how-it-works .choose__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+}
+
+.footer__area .footer__view-channel {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+
+.footer__area .footer__view-channel .tg-btn {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 7.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__area .footer__view-channel .tg-btn span {
+    border-radius: inherit;
+    padding-inline: 1px;
+}
+
+.team-icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.roadMap__area .roadMap__content-wrap .sub-title {
+    font-size: 30px;
+}
+
+.tokenomics .summary__area .summary__content .sub-title {
+    font-size: 30px;
+}
+
+.partners .brand__inner-wrap .sub-title {
+    font-size: 24px;
+}
+
+.solutions .section__title .sub-title {
+    font-size: 30px;
+}
+
+.solutions .section__title .title {
+    font-size: 20px;
+}
+
+.team .section__title .sub-title {
+    font-size: 30px;
+}
+
+.faq__area .section__title .sub-title {
+    font-size: 30px;
+}
+
+.faq__area .section__title .title {
+    font-size: 20px;
+}
+
+.docs .section__title .sub-title {
+    font-size: 30px;
+}
+
+.tgmenu__nav .tgmenu__navbar-wrap {
+    margin-left: -100px;
+}
+
+.tgmenu__nav .tgmenu__navbar-wrap ul li a {
+    font-size: 20px;
+}
+
+.logo img {
+    width: 75%;
+}
+
+.progress__item:first-child .progress__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.swiper-wrapper .swiper-slide .brand__item img {
+    height: 40px;
+}
+
+@media (max-width: 991.98px) {
+    .banner__area .banner__content .title {
+        font-size: 40px;
+    }
+
+    .banner__area .banner__content .sub-title {
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .after-hero .section__title .sub-title {
+        font-size: 22px;
+        white-space: wrap;
+        margin-bottom: 10px;
+    }
+
+    .after-hero .section__title .sub-title-2 {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .nav-logo {
+        width: 50%;
+    }
+
+    .nav-logo img {
+        height: 20px !important;
+    }
+}
