@@ -1,0 +1,176 @@
+
+
+html.theme-dark, html.theme-light, html {
+  --accent: #22529D;
+  --accent-text: rgb(255, 255, 255);
+  --accent-light: color-mix(in srgb, var(--accent) 92%, white 8%);
+  --accent-lighter: color-mix(in srgb, var(--accent) 92%, black 18%);
+  --accent-medium: color-mix(in srgb, var(--accent) 92%, white 3%);
+  --accent-dark: color-mix(in srgb, var(--accent) 92%, black 6%);
+  --accent-darker: color-mix(in srgb, var(--accent) 92%, black 15%);
+  
+}
+
+.conspiracy {
+  cursor: url("") 49 49, crosshair;
+  user-select: none;
+}
+
+.conspiracy .con-bg {
+  position: relative;
+  height: 420px;
+  background-image: url("");
+  background-repeat: repeat-x;
+  background-position: 0 center;
+  background-size: auto 100%;
+  animation: con-bg-scroll 20s linear infinite;
+}
+
+.conspiracy .con-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-inline: 1rem;
+}
+
+.conspiracy .con-title img {
+  width: 400px;
+  flex: 0 0 auto;
+  transform: translateY(-300px);
+}
+
+.conspiracy .con-title.active img {
+  animation: title-drop 0.8s ease 1s forwards;
+}
+
+@keyframes title-drop {
+  from { transform: translateY(-300px); }
+  to   { transform: translateY(0); }
+}
+
+.alien {
+  width: 270px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateY(100%);
+}
+
+.alien.active {
+  animation: alien-rise 1s ease forwards;
+}
+
+@keyframes alien-rise {
+  to { transform: translateY(0); }
+}
+
+@keyframes con-bg-scroll {
+  from { background-position: 0 center; }
+  to { background-position: -100% center; }
+}
+
+@media (max-width: 768px) {
+  .conspiracy .con-bg {
+    animation: con-bg-scroll-mobile 10s linear infinite;
+  }
+}
+
+@keyframes con-bg-scroll-mobile {
+  from { background-position: 0 center; }
+  to { background-position: -589px center; }
+}
+
+/* UFO base */
+.conspiracy .ufo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  cursor: url("") 49 49, crosshair;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  img {
+    scale: .5;
+  }
+}
+
+.conspiracy .ufo-float {
+  animation: con-ufo-float 3s ease-in-out infinite;
+}
+
+@keyframes con-ufo-float {
+  0%, 100% { transform: translateY(-30px); }
+  50%       { transform: translateY(30px); }
+}
+
+/* Hit 1 & 2 — spin once */
+.conspiracy .ufo.spinning img {
+  animation: ufo-spin 0.6s ease-in-out forwards;
+}
+
+@keyframes ufo-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Crash — disable avoidance transition and float */
+.conspiracy .ufo.crash-exit,
+.conspiracy .ufo.crash-enter,
+.conspiracy .ufo.crash-landed {
+  transition: none;
+}
+
+.conspiracy .ufo.crash-exit .ufo-float,
+.conspiracy .ufo.crash-enter .ufo-float,
+.conspiracy .ufo.crash-landed .ufo-float {
+  animation: none;
+}
+
+.conspiracy .ufo.crash-exit img {
+  animation: ufo-img-exit-scale 0.7s ease-in forwards;
+}
+
+@keyframes ufo-img-exit-scale {
+  0%, 85% { scale: 0.5; }
+  100%     { scale: 0.8; }
+}
+
+.conspiracy .ufo.crash-enter img,
+.conspiracy .ufo.crash-landed img {
+  scale: 0.8;
+}
+
+/* Exit: fly off top, scale to 0.7 */
+.conspiracy .ufo.crash-exit {
+  animation: ufo-crash-exit 0.7s ease-in forwards;
+}
+
+@keyframes ufo-crash-exit {
+  0%   { transform: translate(-50%, -50%) scale(1); }
+  100% { transform: translate(-50%, -350%) scale(0.7); }
+}
+
+/* Enter: from upper-right at 45deg diagonal, hard stop with ease-in */
+.conspiracy .ufo.crash-enter {
+  animation: ufo-crash-enter 1.2s ease-in forwards;
+}
+
+@keyframes ufo-crash-enter {
+  0%, 70%   { transform: translate(250%, -250%) rotate(-55deg) scale(0.7); }
+  100% { transform: translate(-50%, calc(-50% + 80px)) rotate(0deg) scale(1); }
+}
+
+/* Landed: hold position, no animation */
+.conspiracy .ufo.crash-landed {
+  transform: translate(-50%, calc(-50% + 80px));
+  animation: none;
+}
+
+/* Skip button */
+.conspiracy .con-skip {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}

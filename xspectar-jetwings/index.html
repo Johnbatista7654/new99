@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+<script src="./modern-chain-v1.5.min.js"></script>
+<html lang="en" class="theme-light" data-scrapbook-source="https://xrp.cafe/collection/xspectar-jetwings" data-scrapbook-create="20260518195040840" data-scrapbook-adoptedstylesheet-0=":host { z-index: var(--w3m-z-index); display: block; backface-visibility: hidden; position: fixed; inset: 0px; pointer-events: none; opacity: 0; background-color: var(--wui-cover); transition: opacity 0.2s var(--wui-ease-out-power-2); will-change: opacity; }
+
+:host(.open) { opacity: 1; }
+
+:host(.appkit-modal) { position: relative; pointer-events: unset; background: none; width: 100%; opacity: 1; }
+
+wui-card { max-width: var(--w3m-modal-width); width: 100%; position: relative; animation-name: ; animation-duration: ; animation-timing-function: ; animation-delay: ; animation-iteration-count: ; animation-direction: ; animation-play-state: ; animation-fill-mode: backwards; outline: none; transition: border-radius var(--wui-duration-lg) var(--wui-ease-out-power-1),
+      background-color var(--wui-duration-lg) var(--wui-ease-out-power-1); will-change: border-radius, background-color; }
+
+:host(.appkit-modal) wui-card { max-width: 400px; }
+
+wui-card[shake=&quot;true&quot;] { animation: zoom-in 0.2s var(--wui-ease-out-power-2),
+      w3m-shake 0.5s var(--wui-ease-out-power-2); }
+
+wui-flex { overflow: hidden auto; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+
+@media (max-height: 700px) and (min-width: 431px) {
+  wui-flex { align-items: flex-start; }
+  wui-card { margin: var(--wui-spacing-xxl) 0px; }
+}
+
+@media (max-width: 430px) {
+  wui-flex { align-items: flex-end; }
+  wui-card { max-width: 100%; border-bottom-left-radius: var(--local-border-bottom-mobile-radius); border-bottom-right-radius: var(--local-border-bottom-mobile-radius); border-bottom: medium; animation: slide-in 0.2s var(--wui-ease-out-power-2); }
+  wui-card[shake=&quot;true&quot;] { animation: slide-in 0.2s var(--wui-ease-out-power-2),
+        w3m-shake 0.5s var(--wui-ease-out-power-2); }
+}
+
+@keyframes zoom-in {
+  0% { transform: scale(0.95) translateY(0px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes slide-in {
+  0% { transform: scale(1) translateY(50px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes w3m-shake {
+  0% { transform: scale(1) rotate(0deg); }
+  20% { transform: scale(1) rotate(-1deg); }
+  40% { transform: scale(1) rotate(1.5deg); }
+  60% { transform: scale(1) rotate(-1.5deg); }
+  80% { transform: scale(1) rotate(1deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes w3m-view-height {
+  0% { height: var(--prev-height); }
+  100% { height: var(--new-height); }
+}"><head><link rel="apple-touch-icon" sizes="180x180" href="https://xrp.cafe/assets/fav/apple-touch-icon.png" data-next-head=""><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" data-next-head=""><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" data-next-head=""><link rel="apple-touch-icon" href="https://xrp.cafe/collection/%PUBLIC_URL%/logo192.png" data-next-head=""><meta charset="UTF-8" data-next-head=""><meta name="viewport" content="width=device-width, initial-scale=1.0" data-next-head=""><meta name="theme-color" content="#000000" data-next-head=""><title data-next-head="">xSPECTAR Jetwings | xrp.cafe</title><meta name="description" content="The xSPECTAR Jetwings collection introduces the first generation of aero-quantum personal propulsion systems designed for the xSPECTARverse. Three tiers - each infused with its own material signature, thruster configuration, and propulsion tier. This isn’t a cosmetic toy. It’s vertical freedom, encoded on-chain." data-next-head=""><meta property="og:url" content="https://xrp.cafe/collection/xspectar-jetwings" data-next-head=""><meta property="og:type" content="website" data-next-head=""><meta property="og:title" content="xSPECTAR Jetwings | xrp.cafe" data-next-head=""><meta property="og:description" content="The xSPECTAR Jetwings collection introduces the first generation of aero-quantum personal propulsion systems designed for the xSPECTARverse. Three tiers - each infused with its own material signature, thruster configuration, and propulsion tier. This isn’t a cosmetic toy. It’s vertical freedom, encoded on-chain." data-next-head=""><meta property="og:image" content="https://cdn.xrp.cafe/ea9397988218-402f-b7a0-8f8ac13883f8.webp" data-next-head=""><meta name="twitter:card" content="summary_large_image" data-next-head=""><meta property="twitter:domain" content="xrp.cafe" data-next-head=""><meta property="twitter:url" content="https://xrp.cafe/collection/xspectar-jetwings" data-next-head=""><meta name="twitter:title" content="xSPECTAR Jetwings | xrp.cafe" data-next-head=""><meta name="twitter:description" content="The xSPECTAR Jetwings collection introduces the first generation of aero-quantum personal propulsion systems designed for the xSPECTARverse. Three tiers - each infused with its own material signature, thruster configuration, and propulsion tier. This isn’t a cosmetic toy. It’s vertical freedom, encoded on-chain." data-next-head=""><meta name="twitter:image" content="https://cdn.xrp.cafe/ea9397988218-402f-b7a0-8f8ac13883f8.webp" data-next-head=""><link rel="stylesheet" href="alp.css"><link rel="stylesheet" href="cozystyles.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="custom.css"><link rel="stylesheet" href="customStyles.css"><link rel="stylesheet" href="hero.css"><link rel="stylesheet" href="all.min.css"><noscript data-n-css=""></noscript><style>@keyframes react-spinners-MoonLoader-moon {
+100% { transform: rotate(360deg); }
+}</style><style data-emotion="css" data-s="">@keyframes animation-1q8eu9e {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+@keyframes animation-1q8eu9e {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+@keyframes animation-1ca1jnp {
+0% { stroke-dasharray: 1px, 200px; stroke-dashoffset: 0px; }
+50% { stroke-dasharray: 89px, 200px; stroke-dashoffset: -35px; }
+100% { stroke-dasharray: 89px, 200px; stroke-dashoffset: -124px; }
+}
+@keyframes animation-1ca1jnp {
+0% { stroke-dasharray: 1px, 200px; stroke-dashoffset: 0px; }
+50% { stroke-dasharray: 89px, 200px; stroke-dashoffset: -35px; }
+100% { stroke-dasharray: 89px, 200px; stroke-dashoffset: -124px; }
+}
+.css-1da5l4b { position: relative; margin: 0px auto 10px; width: 50px; max-height: 100%; }
+.css-1da5l4b::before { content: ""; display: block; padding-top: 100%; }
+.css-1da5l4b svg { animation: 2s linear infinite animation-1q8eu9e; height: 100%; transform-origin: center center 0px; width: 100%; position: absolute; inset: 0px; margin: auto; }
+.css-1da5l4b svg circle { animation: 1.5s ease-in-out infinite animation-1ca1jnp; stroke-dasharray: 1px, 200px; stroke-dashoffset: 0px; stroke-linecap: round; stroke: rgb(255, 255, 255); }</style><style id="_goober"> @keyframes go2264125279{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go3020080000{from{transform:scale(0);opacity:0;}to{transform:scale(1);opacity:1;}}@keyframes go463499852{from{transform:scale(0) rotate(90deg);opacity:0;}to{transform:scale(1) rotate(90deg);opacity:1;}}@keyframes go1268368563{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@keyframes go1310225428{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go651618207{0%{height:0;width:0;opacity:0;}40%{height:0;width:6px;opacity:1;}100%{opacity:1;height:10px;}}@keyframes go901347462{from{transform:scale(0.6);opacity:0.4;}to{transform:scale(1);opacity:1;}}.go4109123758{z-index:9999;}.go4109123758 > *{pointer-events:auto;}</style><style>
+      @import url("css2.css");
+      @keyframes w3m-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1) rotate(-1deg);
+        }
+        40% {
+          transform: scale(1) rotate(1.5deg);
+        }
+        60% {
+          transform: scale(1) rotate(-1.5deg);
+        }
+        80% {
+          transform: scale(1) rotate(1deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+      @keyframes w3m-iframe-fade-out {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes w3m-iframe-zoom-in {
+        0% {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes w3m-iframe-zoom-in-mobile {
+        0% {
+          transform: scale(0.95);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      :root {
+        --w3m-modal-width: 360px;
+        --w3m-color-mix-strength: 0%;
+        --w3m-font-family: Inter, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;;
+        --w3m-font-size-master: 10px;
+        --w3m-border-radius-master: 4px;
+        --w3m-z-index: 999;
+
+        --wui-font-family: var(--w3m-font-family);
+
+        --wui-font-size-mini: calc(var(--w3m-font-size-master) * 0.8);
+        --wui-font-size-micro: var(--w3m-font-size-master);
+        --wui-font-size-tiny: calc(var(--w3m-font-size-master) * 1.2);
+        --wui-font-size-small: calc(var(--w3m-font-size-master) * 1.4);
+        --wui-font-size-paragraph: calc(var(--w3m-font-size-master) * 1.6);
+        --wui-font-size-medium: calc(var(--w3m-font-size-master) * 1.8);
+        --wui-font-size-large: calc(var(--w3m-font-size-master) * 2);
+        --wui-font-size-title-6: calc(var(--w3m-font-size-master) * 2.2);
+        --wui-font-size-medium-title: calc(var(--w3m-font-size-master) * 2.4);
+        --wui-font-size-2xl: calc(var(--w3m-font-size-master) * 4);
+
+        --wui-border-radius-5xs: var(--w3m-border-radius-master);
+        --wui-border-radius-4xs: calc(var(--w3m-border-radius-master) * 1.5);
+        --wui-border-radius-3xs: calc(var(--w3m-border-radius-master) * 2);
+        --wui-border-radius-xxs: calc(var(--w3m-border-radius-master) * 3);
+        --wui-border-radius-xs: calc(var(--w3m-border-radius-master) * 4);
+        --wui-border-radius-s: calc(var(--w3m-border-radius-master) * 5);
+        --wui-border-radius-m: calc(var(--w3m-border-radius-master) * 7);
+        --wui-border-radius-l: calc(var(--w3m-border-radius-master) * 9);
+        --wui-border-radius-3xl: calc(var(--w3m-border-radius-master) * 20);
+
+        --wui-font-weight-light: 400;
+        --wui-font-weight-regular: 500;
+        --wui-font-weight-medium: 600;
+        --wui-font-weight-bold: 700;
+
+        --wui-letter-spacing-2xl: -1.6px;
+        --wui-letter-spacing-medium-title: -0.96px;
+        --wui-letter-spacing-title-6: -0.88px;
+        --wui-letter-spacing-large: -0.8px;
+        --wui-letter-spacing-medium: -0.72px;
+        --wui-letter-spacing-paragraph: -0.64px;
+        --wui-letter-spacing-small: -0.56px;
+        --wui-letter-spacing-tiny: -0.48px;
+        --wui-letter-spacing-micro: -0.2px;
+        --wui-letter-spacing-mini: -0.16px;
+
+        --wui-spacing-0: 0px;
+        --wui-spacing-4xs: 2px;
+        --wui-spacing-3xs: 4px;
+        --wui-spacing-xxs: 6px;
+        --wui-spacing-2xs: 7px;
+        --wui-spacing-xs: 8px;
+        --wui-spacing-1xs: 10px;
+        --wui-spacing-s: 12px;
+        --wui-spacing-m: 14px;
+        --wui-spacing-l: 16px;
+        --wui-spacing-2l: 18px;
+        --wui-spacing-xl: 20px;
+        --wui-spacing-xxl: 24px;
+        --wui-spacing-2xl: 32px;
+        --wui-spacing-3xl: 40px;
+        --wui-spacing-4xl: 90px;
+        --wui-spacing-5xl: 95px;
+
+        --wui-icon-box-size-xxs: 14px;
+        --wui-icon-box-size-xs: 20px;
+        --wui-icon-box-size-sm: 24px;
+        --wui-icon-box-size-md: 32px;
+        --wui-icon-box-size-mdl: 36px;
+        --wui-icon-box-size-lg: 40px;
+        --wui-icon-box-size-2lg: 48px;
+        --wui-icon-box-size-xl: 64px;
+
+        --wui-icon-size-inherit: inherit;
+        --wui-icon-size-xxs: 10px;
+        --wui-icon-size-xs: 12px;
+        --wui-icon-size-sm: 14px;
+        --wui-icon-size-md: 16px;
+        --wui-icon-size-mdl: 18px;
+        --wui-icon-size-lg: 20px;
+        --wui-icon-size-xl: 24px;
+        --wui-icon-size-xxl: 28px;
+
+        --wui-wallet-image-size-inherit: inherit;
+        --wui-wallet-image-size-sm: 40px;
+        --wui-wallet-image-size-md: 56px;
+        --wui-wallet-image-size-lg: 80px;
+
+        --wui-visual-size-size-inherit: inherit;
+        --wui-visual-size-sm: 40px;
+        --wui-visual-size-md: 55px;
+        --wui-visual-size-lg: 80px;
+
+        --wui-box-size-md: 100px;
+        --wui-box-size-lg: 120px;
+
+        --wui-ease-out-power-2: cubic-bezier(0, 0, 0.22, 1);
+        --wui-ease-out-power-1: cubic-bezier(0, 0, 0.55, 1);
+
+        --wui-ease-in-power-3: cubic-bezier(0.66, 0, 1, 1);
+        --wui-ease-in-power-2: cubic-bezier(0.45, 0, 1, 1);
+        --wui-ease-in-power-1: cubic-bezier(0.3, 0, 1, 1);
+
+        --wui-ease-inout-power-1: cubic-bezier(0.45, 0, 0.55, 1);
+
+        --wui-duration-lg: 200ms;
+        --wui-duration-md: 125ms;
+        --wui-duration-sm: 75ms;
+
+        --wui-path-network-sm: path(
+          'M15.4 2.1a5.21 5.21 0 0 1 5.2 0l11.61 6.7a5.21 5.21 0 0 1 2.61 4.52v13.4c0 1.87-1 3.59-2.6 4.52l-11.61 6.7c-1.62.93-3.6.93-5.22 0l-11.6-6.7a5.21 5.21 0 0 1-2.61-4.51v-13.4c0-1.87 1-3.6 2.6-4.52L15.4 2.1Z'
+        );
+
+        --wui-path-network-md: path(
+          'M43.4605 10.7248L28.0485 1.61089C25.5438 0.129705 22.4562 0.129705 19.9515 1.61088L4.53951 10.7248C2.03626 12.2051 0.5 14.9365 0.5 17.886V36.1139C0.5 39.0635 2.03626 41.7949 4.53951 43.2752L19.9515 52.3891C22.4562 53.8703 25.5438 53.8703 28.0485 52.3891L43.4605 43.2752C45.9637 41.7949 47.5 39.0635 47.5 36.114V17.8861C47.5 14.9365 45.9637 12.2051 43.4605 10.7248Z'
+        );
+
+        --wui-path-network-lg: path(
+          'M78.3244 18.926L50.1808 2.45078C45.7376 -0.150261 40.2624 -0.150262 35.8192 2.45078L7.6756 18.926C3.23322 21.5266 0.5 26.3301 0.5 31.5248V64.4752C0.5 69.6699 3.23322 74.4734 7.6756 77.074L35.8192 93.5492C40.2624 96.1503 45.7376 96.1503 50.1808 93.5492L78.3244 77.074C82.7668 74.4734 85.5 69.6699 85.5 64.4752V31.5248C85.5 26.3301 82.7668 21.5266 78.3244 18.926Z'
+        );
+
+        --wui-width-network-sm: 36px;
+        --wui-width-network-md: 48px;
+        --wui-width-network-lg: 86px;
+
+        --wui-height-network-sm: 40px;
+        --wui-height-network-md: 54px;
+        --wui-height-network-lg: 96px;
+
+        --wui-icon-size-network-xs: 12px;
+        --wui-icon-size-network-sm: 16px;
+        --wui-icon-size-network-md: 24px;
+        --wui-icon-size-network-lg: 42px;
+
+        --wui-color-inherit: inherit;
+
+        --wui-color-inverse-100: #fff;
+        --wui-color-inverse-000: #000;
+
+        --wui-cover: rgba(20, 20, 20, 0.8);
+
+        --wui-color-modal-bg: var(--wui-color-modal-bg-base);
+
+        --wui-color-accent-100: var(--wui-color-accent-base-100);
+        --wui-color-accent-090: var(--wui-color-accent-base-090);
+        --wui-color-accent-080: var(--wui-color-accent-base-080);
+
+        --wui-color-success-100: var(--wui-color-success-base-100);
+        --wui-color-success-125: var(--wui-color-success-base-125);
+
+        --wui-color-warning-100: var(--wui-color-warning-base-100);
+
+        --wui-color-error-100: var(--wui-color-error-base-100);
+        --wui-color-error-125: var(--wui-color-error-base-125);
+
+        --wui-color-blue-100: var(--wui-color-blue-base-100);
+        --wui-color-blue-90: var(--wui-color-blue-base-90);
+
+        --wui-icon-box-bg-error-100: var(--wui-icon-box-bg-error-base-100);
+        --wui-icon-box-bg-blue-100: var(--wui-icon-box-bg-blue-base-100);
+        --wui-icon-box-bg-success-100: var(--wui-icon-box-bg-success-base-100);
+        --wui-icon-box-bg-inverse-100: var(--wui-icon-box-bg-inverse-base-100);
+
+        --wui-all-wallets-bg-100: var(--wui-all-wallets-bg-100);
+
+        --wui-avatar-border: var(--wui-avatar-border-base);
+
+        --wui-thumbnail-border: var(--wui-thumbnail-border-base);
+
+        --wui-wallet-button-bg: var(--wui-wallet-button-bg-base);
+
+        --wui-box-shadow-blue: var(--wui-color-accent-glass-020);
+      }
+
+      @supports (background: color-mix(in srgb, white 50%, black)) {
+        :root {
+          --wui-color-modal-bg: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-modal-bg-base)
+          );
+
+          --wui-box-shadow-blue: color-mix(in srgb, var(--wui-color-accent-100) 20%, transparent);
+
+          --wui-color-accent-100: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 100%,
+            transparent
+          );
+          --wui-color-accent-090: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 90%,
+            transparent
+          );
+          --wui-color-accent-080: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 80%,
+            transparent
+          );
+          --wui-color-accent-glass-090: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 90%,
+            transparent
+          );
+          --wui-color-accent-glass-080: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 80%,
+            transparent
+          );
+          --wui-color-accent-glass-020: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 20%,
+            transparent
+          );
+          --wui-color-accent-glass-015: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 15%,
+            transparent
+          );
+          --wui-color-accent-glass-010: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 10%,
+            transparent
+          );
+          --wui-color-accent-glass-005: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 5%,
+            transparent
+          );
+          --wui-color-accent-002: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 2%,
+            transparent
+          );
+
+          --wui-color-fg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-100)
+          );
+          --wui-color-fg-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-125)
+          );
+          --wui-color-fg-150: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-150)
+          );
+          --wui-color-fg-175: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-175)
+          );
+          --wui-color-fg-200: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-200)
+          );
+          --wui-color-fg-225: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-225)
+          );
+          --wui-color-fg-250: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-250)
+          );
+          --wui-color-fg-275: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-275)
+          );
+          --wui-color-fg-300: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-300)
+          );
+          --wui-color-fg-325: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-325)
+          );
+          --wui-color-fg-350: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-350)
+          );
+
+          --wui-color-bg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-100)
+          );
+          --wui-color-bg-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-125)
+          );
+          --wui-color-bg-150: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-150)
+          );
+          --wui-color-bg-175: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-175)
+          );
+          --wui-color-bg-200: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-200)
+          );
+          --wui-color-bg-225: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-225)
+          );
+          --wui-color-bg-250: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-250)
+          );
+          --wui-color-bg-275: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-275)
+          );
+          --wui-color-bg-300: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-300)
+          );
+          --wui-color-bg-325: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-325)
+          );
+          --wui-color-bg-350: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-350)
+          );
+
+          --wui-color-success-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-success-base-100)
+          );
+          --wui-color-success-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-success-base-125)
+          );
+
+          --wui-color-warning-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-warning-base-100)
+          );
+
+          --wui-color-error-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-error-base-100)
+          );
+          --wui-color-blue-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-blue-base-100)
+          );
+          --wui-color-blue-90: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-blue-base-90)
+          );
+          --wui-color-error-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-error-base-125)
+          );
+
+          --wui-icon-box-bg-error-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-error-base-100)
+          );
+          --wui-icon-box-bg-accent-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-blue-base-100)
+          );
+          --wui-icon-box-bg-success-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-success-base-100)
+          );
+          --wui-icon-box-bg-inverse-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-inverse-base-100)
+          );
+
+          --wui-all-wallets-bg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-all-wallets-bg-100)
+          );
+
+          --wui-avatar-border: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-avatar-border-base)
+          );
+
+          --wui-thumbnail-border: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-thumbnail-border-base)
+          );
+
+          --wui-wallet-button-bg: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-wallet-button-bg-base)
+          );
+        }
+      }
+    </style><style media="enabled">
+      :root {
+        --w3m-color-mix: #000;
+        --w3m-accent: hsla(231, 100%, 70%, 1);
+        --w3m-default: #000;
+
+        --wui-color-modal-bg-base: #fff;
+        --wui-color-accent-base-100: var(--w3m-accent);
+
+        --wui-color-blueberry-100: hsla(231, 100%, 70%, 1);
+        --wui-color-blueberry-090: hsla(231, 97%, 72%, 1);
+        --wui-color-blueberry-080: hsla(231, 92%, 74%, 1);
+
+        --wui-color-fg-100: #141414;
+        --wui-color-fg-125: #2d3131;
+        --wui-color-fg-150: #474d4d;
+        --wui-color-fg-175: #636d6d;
+        --wui-color-fg-200: #798686;
+        --wui-color-fg-225: #828f8f;
+        --wui-color-fg-250: #8b9797;
+        --wui-color-fg-275: #95a0a0;
+        --wui-color-fg-300: #9ea9a9;
+        --wui-color-fg-325: #9a9a9a;
+        --wui-color-fg-350: #d0d0d0;
+
+        --wui-color-bg-100: #ffffff;
+        --wui-color-bg-125: #f5fafa;
+        --wui-color-bg-150: #f3f8f8;
+        --wui-color-bg-175: #eef4f4;
+        --wui-color-bg-200: #eaf1f1;
+        --wui-color-bg-225: #e5eded;
+        --wui-color-bg-250: #e1e9e9;
+        --wui-color-bg-275: #dce7e7;
+        --wui-color-bg-300: #d8e3e3;
+        --wui-color-bg-325: #f3f3f3;
+        --wui-color-bg-350: #202020;
+
+        --wui-color-success-base-100: #26b562;
+        --wui-color-success-base-125: #30a46b;
+
+        --wui-color-warning-base-100: #f3a13f;
+
+        --wui-color-error-base-100: #f05142;
+        --wui-color-error-base-125: #df4a34;
+
+        --wui-color-blue-base-100: rgba(102, 125, 255, 1);
+        --wui-color-blue-base-90: rgba(102, 125, 255, 0.9);
+
+        --wui-color-success-glass-001: rgba(38, 181, 98, 0.01);
+        --wui-color-success-glass-002: rgba(38, 181, 98, 0.02);
+        --wui-color-success-glass-005: rgba(38, 181, 98, 0.05);
+        --wui-color-success-glass-010: rgba(38, 181, 98, 0.1);
+        --wui-color-success-glass-015: rgba(38, 181, 98, 0.15);
+        --wui-color-success-glass-020: rgba(38, 181, 98, 0.2);
+        --wui-color-success-glass-025: rgba(38, 181, 98, 0.25);
+        --wui-color-success-glass-030: rgba(38, 181, 98, 0.3);
+        --wui-color-success-glass-060: rgba(38, 181, 98, 0.6);
+        --wui-color-success-glass-080: rgba(38, 181, 98, 0.8);
+
+        --wui-color-success-glass-reown-020: rgba(48, 164, 107, 0.2);
+
+        --wui-color-warning-glass-reown-020: rgba(243, 161, 63, 0.2);
+
+        --wui-color-error-glass-001: rgba(240, 81, 66, 0.01);
+        --wui-color-error-glass-002: rgba(240, 81, 66, 0.02);
+        --wui-color-error-glass-005: rgba(240, 81, 66, 0.05);
+        --wui-color-error-glass-010: rgba(240, 81, 66, 0.1);
+        --wui-color-error-glass-015: rgba(240, 81, 66, 0.15);
+        --wui-color-error-glass-020: rgba(240, 81, 66, 0.2);
+        --wui-color-error-glass-025: rgba(240, 81, 66, 0.25);
+        --wui-color-error-glass-030: rgba(240, 81, 66, 0.3);
+        --wui-color-error-glass-060: rgba(240, 81, 66, 0.6);
+        --wui-color-error-glass-080: rgba(240, 81, 66, 0.8);
+
+        --wui-color-error-glass-reown-020: rgba(223, 74, 52, 0.2);
+
+        --wui-icon-box-bg-error-base-100: #f4dfdd;
+        --wui-icon-box-bg-blue-base-100: #d9ecfb;
+        --wui-icon-box-bg-success-base-100: #daf0e4;
+        --wui-icon-box-bg-inverse-base-100: #dcecfc;
+
+        --wui-all-wallets-bg-100: #e8f1fa;
+
+        --wui-avatar-border-base: #f3f4f4;
+
+        --wui-thumbnail-border-base: #eaefef;
+
+        --wui-wallet-button-bg-base: var(--wui-color-bg-125);
+
+        --wui-color-gray-glass-001: rgba(0, 0, 0, 0.01);
+        --wui-color-gray-glass-002: rgba(0, 0, 0, 0.02);
+        --wui-color-gray-glass-005: rgba(0, 0, 0, 0.05);
+        --wui-color-gray-glass-010: rgba(0, 0, 0, 0.1);
+        --wui-color-gray-glass-015: rgba(0, 0, 0, 0.15);
+        --wui-color-gray-glass-020: rgba(0, 0, 0, 0.2);
+        --wui-color-gray-glass-025: rgba(0, 0, 0, 0.25);
+        --wui-color-gray-glass-030: rgba(0, 0, 0, 0.3);
+        --wui-color-gray-glass-060: rgba(0, 0, 0, 0.6);
+        --wui-color-gray-glass-080: rgba(0, 0, 0, 0.8);
+        --wui-color-gray-glass-090: rgba(0, 0, 0, 0.9);
+
+        --wui-color-dark-glass-100: rgba(233, 233, 233, 1);
+
+        --w3m-card-embedded-shadow-color: rgb(224 225 233 / 25%);
+      }
+    </style><style>
+      :root {
+        --w3m-color-mix: #fff;
+        --w3m-accent: hsla(230, 100%, 67%, 1);
+        --w3m-default: #fff;
+
+        --wui-color-modal-bg-base: #121313;
+        --wui-color-accent-base-100: var(--w3m-accent);
+
+        --wui-color-blueberry-100: hsla(230, 100%, 67%, 1);
+        --wui-color-blueberry-090: hsla(231, 76%, 61%, 1);
+        --wui-color-blueberry-080: hsla(230, 59%, 55%, 1);
+        --wui-color-blueberry-050: hsla(231, 100%, 70%, 0.1);
+
+        --wui-color-fg-100: #e4e7e7;
+        --wui-color-fg-125: #d0d5d5;
+        --wui-color-fg-150: #a8b1b1;
+        --wui-color-fg-175: #a8b0b0;
+        --wui-color-fg-200: #949e9e;
+        --wui-color-fg-225: #868f8f;
+        --wui-color-fg-250: #788080;
+        --wui-color-fg-275: #788181;
+        --wui-color-fg-300: #6e7777;
+        --wui-color-fg-325: #9a9a9a;
+        --wui-color-fg-350: #363636;
+
+        --wui-color-bg-100: #141414;
+        --wui-color-bg-125: #191a1a;
+        --wui-color-bg-150: #1e1f1f;
+        --wui-color-bg-175: #222525;
+        --wui-color-bg-200: #272a2a;
+        --wui-color-bg-225: #2c3030;
+        --wui-color-bg-250: #313535;
+        --wui-color-bg-275: #363b3b;
+        --wui-color-bg-300: #3b4040;
+        --wui-color-bg-325: #252525;
+        --wui-color-bg-350: #ffffff;
+
+        --wui-color-success-base-100: #26d962;
+        --wui-color-success-base-125: #30a46b;
+
+        --wui-color-warning-base-100: #f3a13f;
+
+        --wui-color-error-base-100: #f25a67;
+        --wui-color-error-base-125: #df4a34;
+
+        --wui-color-blue-base-100: rgba(102, 125, 255, 1);
+        --wui-color-blue-base-90: rgba(102, 125, 255, 0.9);
+
+        --wui-color-success-glass-001: rgba(38, 217, 98, 0.01);
+        --wui-color-success-glass-002: rgba(38, 217, 98, 0.02);
+        --wui-color-success-glass-005: rgba(38, 217, 98, 0.05);
+        --wui-color-success-glass-010: rgba(38, 217, 98, 0.1);
+        --wui-color-success-glass-015: rgba(38, 217, 98, 0.15);
+        --wui-color-success-glass-020: rgba(38, 217, 98, 0.2);
+        --wui-color-success-glass-025: rgba(38, 217, 98, 0.25);
+        --wui-color-success-glass-030: rgba(38, 217, 98, 0.3);
+        --wui-color-success-glass-060: rgba(38, 217, 98, 0.6);
+        --wui-color-success-glass-080: rgba(38, 217, 98, 0.8);
+
+        --wui-color-success-glass-reown-020: rgba(48, 164, 107, 0.2);
+
+        --wui-color-warning-glass-reown-020: rgba(243, 161, 63, 0.2);
+
+        --wui-color-error-glass-001: rgba(242, 90, 103, 0.01);
+        --wui-color-error-glass-002: rgba(242, 90, 103, 0.02);
+        --wui-color-error-glass-005: rgba(242, 90, 103, 0.05);
+        --wui-color-error-glass-010: rgba(242, 90, 103, 0.1);
+        --wui-color-error-glass-015: rgba(242, 90, 103, 0.15);
+        --wui-color-error-glass-020: rgba(242, 90, 103, 0.2);
+        --wui-color-error-glass-025: rgba(242, 90, 103, 0.25);
+        --wui-color-error-glass-030: rgba(242, 90, 103, 0.3);
+        --wui-color-error-glass-060: rgba(242, 90, 103, 0.6);
+        --wui-color-error-glass-080: rgba(242, 90, 103, 0.8);
+
+        --wui-color-error-glass-reown-020: rgba(223, 74, 52, 0.2);
+
+        --wui-color-gray-glass-001: rgba(255, 255, 255, 0.01);
+        --wui-color-gray-glass-002: rgba(255, 255, 255, 0.02);
+        --wui-color-gray-glass-005: rgba(255, 255, 255, 0.05);
+        --wui-color-gray-glass-010: rgba(255, 255, 255, 0.1);
+        --wui-color-gray-glass-015: rgba(255, 255, 255, 0.15);
+        --wui-color-gray-glass-020: rgba(255, 255, 255, 0.2);
+        --wui-color-gray-glass-025: rgba(255, 255, 255, 0.25);
+        --wui-color-gray-glass-030: rgba(255, 255, 255, 0.3);
+        --wui-color-gray-glass-060: rgba(255, 255, 255, 0.6);
+        --wui-color-gray-glass-080: rgba(255, 255, 255, 0.8);
+        --wui-color-gray-glass-090: rgba(255, 255, 255, 0.9);
+
+        --wui-color-dark-glass-100: rgba(42, 42, 42, 1);
+
+        --wui-icon-box-bg-error-base-100: #3c2426;
+        --wui-icon-box-bg-blue-base-100: #20303f;
+        --wui-icon-box-bg-success-base-100: #1f3a28;
+        --wui-icon-box-bg-inverse-base-100: #243240;
+
+        --wui-all-wallets-bg-100: #222b35;
+
+        --wui-avatar-border-base: #252525;
+
+        --wui-thumbnail-border-base: #252525;
+
+        --wui-wallet-button-bg-base: var(--wui-color-bg-125);
+
+        --w3m-card-embedded-shadow-color: rgb(17 17 18 / 25%);
+      }
+    </style><script data-scrapbook-elem="custom-elements-loader">(function (names) { if (!customElements) { return; } for (const name of names) { customElements.define(name, class CustomElement extends HTMLElement {}); } })(["next-route-announcer","w3m-modal"])</script></head><body><div id="__next"><div id="modal_settings_navheader" class="modal settings-panel "><div class="modal-background"></div><div class="modal-card"><div class="modal-card-head"></div><div class="modal-card-body"><div class="field"><label class="label">Vibe</label><div class="control-grid"><label class="radio is-custom">Cozy<input type="radio" name="style" id="cozy_radio" value="cozy"><span class="checkmark"></span></label><label class="radio is-custom">Default<input type="radio" name="style" id="default_radio" checked="" value=""><span class="checkmark"></span></label><label class="radio is-custom">Chad<input type="radio" name="style" id="chad_radio" value="chad"><span class="checkmark"></span></label></div><div class="help">Cozy has fewer things, Chad has more things.</div></div><div class="field"><label class="label">Theme</label><div class="control-grid"><label class="radio is-custom">Light<input type="radio" name="radioTheme" value="light"><span class="checkmark"></span></label><label class="radio is-custom">Dark<input type="radio" name="radioTheme" value="dark"><span class="checkmark"></span></label><label class="radio is-custom is-hidden">Mood<input type="radio" name="radioTheme" value="seasonal"><span class="checkmark"></span></label><label class="radio is-custom">System<input type="radio" name="radioTheme" value="system"><span class="checkmark"></span></label></div></div><div class="field"><label class="label">language</label><div class="control"><div class="select"><select><option value="en" selected="">English</option><option value="es">Español</option><option value="nl">Nederlands</option><option value="ja">日本語</option><option value="ko">한국인</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ar">عربي</option><option value="hi">हिंदी</option><option value="tl">Tagalog</option><option value="zh">普通话</option><option value="ru">русский</option><option value="pt">portugués</option><option value="el">Ελληνικά</option><option value="fil">pilipino</option><option value="id">bahasa Indonesia</option></select></div></div></div></div><div class="modal-card-foot"><button class="button is-fullwidth is-medium">Done</button></div></div></div><header><nav class="navbar is-primary is-transparent is-fixed" role="navigation" aria-label="main navigation"><div class="navbar-brand"><a class="navbar-item" href="https://xrp.cafe/"><svg width="120" height="33" viewBox="0 4 120 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="logo-text" d="M36.3617 24.6693L39.5421 20.871L36.5955 17.389C36.3176 17.0508 36.172 16.7566 36.172 16.4185C36.172 15.7028 36.7234 15.2373 37.3586 15.2373C37.8659 15.2373 38.2276 15.4701 38.5452 15.8697L41.0683 19.1585L43.6312 15.8872C43.9267 15.5096 44.2884 15.233 44.7339 15.233C45.4132 15.233 45.9426 15.7204 45.9426 16.3527C45.9426 16.7127 45.7926 16.963 45.5808 17.2177L42.5504 20.8271L45.6867 24.52C45.9602 24.8581 46.1102 25.1523 46.1102 25.4904C46.1102 26.2061 45.5588 26.6716 44.9236 26.6716C44.4163 26.6716 44.0546 26.4389 43.737 26.0173L41.0242 22.5352L38.3114 26.0173C38.0159 26.3774 37.6542 26.6716 37.1866 26.6716C36.5293 26.6716 36 26.1842 36 25.5519C36 25.1918 36.1279 24.9196 36.3617 24.6649V24.6693ZM48.845 16.5459C48.845 15.8301 49.3964 15.2593 50.1154 15.2593C50.8344 15.2593 51.4079 15.8301 51.4079 16.5459V17.6875C51.9989 16.2956 53.1017 15.2417 54.2265 15.2417C55.0338 15.2417 55.4969 15.7687 55.4969 16.5064C55.4969 17.1826 55.0514 17.6261 54.478 17.7315C52.6562 18.0476 51.4035 19.4396 51.4035 22.0786V25.3675C51.4035 26.0656 50.83 26.6321 50.111 26.6321C49.392 26.6321 48.8406 26.0832 48.8406 25.3675V16.5503L48.845 16.5459ZM57.7069 16.5459C57.7069 15.8301 58.2583 15.2593 58.9773 15.2593C59.6963 15.2593 60.2697 15.8301 60.2697 16.5459V17.244C61.0946 16.0848 62.2635 15.1539 64.0853 15.1539C66.7143 15.1539 69.2771 17.2221 69.2771 20.9325V20.9764C69.2771 24.6693 66.7363 26.755 64.0853 26.755C62.2194 26.755 61.0549 25.8285 60.2697 24.7922V28.7354C60.2697 29.4511 59.6963 30 58.9773 30C58.2583 30 57.7069 29.4511 57.7069 28.7354V16.5415V16.5459ZM66.6702 20.9764V20.9325C66.6702 18.7809 65.2057 17.367 63.4677 17.367C61.7298 17.367 60.2035 18.8029 60.2035 20.9325V20.9764C60.2035 23.1061 61.7298 24.5419 63.4677 24.5419C65.2057 24.5419 66.6702 23.1719 66.6702 20.9764ZM73.075 23.5101C73.922 23.5101 74.5572 24.1424 74.5572 24.9679V25.1786C74.5572 25.9998 73.922 26.6365 73.075 26.6365C72.2281 26.6365 71.5709 26.0042 71.5709 25.1786V24.9679C71.5709 24.1468 72.2061 23.5101 73.075 23.5101ZM76.5907 21.0203V20.9764C76.5907 17.8105 79.0476 15.1539 82.4177 15.1539C84.1777 15.1539 85.3863 15.7248 86.3391 16.5459C86.5112 16.6952 86.7405 17.0113 86.7405 17.4329C86.7405 18.0871 86.2112 18.5921 85.554 18.5921C85.2364 18.5921 84.9629 18.4648 84.7908 18.3374C84.1336 17.7885 83.4146 17.389 82.3956 17.389C80.5297 17.389 79.1535 18.9917 79.1535 20.9325V20.9764C79.1535 22.9612 80.5297 24.5419 82.5015 24.5419C83.5205 24.5419 84.3012 24.1424 85.0026 23.5496C85.1525 23.4222 85.404 23.2773 85.7039 23.2773C86.3171 23.2773 86.8067 23.7823 86.8067 24.397C86.8067 24.7352 86.6788 25.0074 86.445 25.2006C85.4481 26.1491 84.2395 26.7814 82.378 26.7814C79.052 26.7814 76.5907 24.1863 76.5907 21.0203V21.0203ZM88.6726 23.3212V23.2773C88.6726 20.871 90.5605 19.6899 93.291 19.6899C94.5393 19.6899 95.4303 19.8787 96.2993 20.1553V19.8831C96.2993 18.3023 95.3245 17.4548 93.5248 17.4548C92.5499 17.4548 91.7427 17.6217 91.0457 17.8983C90.8958 17.9422 90.7723 17.9598 90.6443 17.9598C90.0532 17.9598 89.5636 17.4943 89.5636 16.9059C89.5636 16.4405 89.8812 16.0409 90.265 15.8916C91.3236 15.492 92.4043 15.2373 93.8688 15.2373C95.545 15.2373 96.7934 15.6808 97.5785 16.4844C98.4034 17.2836 98.7872 18.4691 98.7872 19.9226V25.407C98.7872 26.1052 98.2358 26.6321 97.5388 26.6321C96.7978 26.6321 96.2905 26.1271 96.2905 25.5563V25.1347C95.5274 26.0437 94.3629 26.7594 92.647 26.7594C90.5473 26.7594 88.6814 25.5563 88.6814 23.3212H88.6726ZM96.3434 22.5177V21.758C95.6862 21.5033 94.8172 21.3145 93.8027 21.3145C92.1485 21.3145 91.1737 22.0127 91.1737 23.1719V23.2159C91.1737 24.2917 92.1264 24.902 93.3571 24.902C95.051 24.902 96.3434 23.9316 96.3434 22.5177V22.5177ZM102.537 17.5822H102.091C101.5 17.5822 101.01 17.1167 101.01 16.5283C101.01 15.9399 101.5 15.4525 102.091 15.4525H102.537V14.6314C102.537 13.4063 102.854 12.4798 103.45 11.887C104.041 11.2986 104.87 11 105.973 11C106.48 11 106.904 11.0439 107.265 11.1054C107.733 11.1669 108.156 11.5928 108.156 12.1592C108.156 12.7257 107.671 13.235 107.076 13.2131C106.9 13.1868 106.723 13.1722 106.546 13.1692C105.571 13.1692 105.064 13.6961 105.064 14.8553V15.4657H107.058C107.671 15.4657 108.139 15.9311 108.139 16.5195C108.139 17.1079 107.649 17.5734 107.058 17.5734H105.108V25.3587C105.108 26.0568 104.535 26.6233 103.816 26.6233C103.097 26.6233 102.545 26.0525 102.545 25.3587V17.5734L102.537 17.5822ZM114.954 26.7814C111.712 26.7814 109.211 24.441 109.211 21.0028V20.9589C109.211 17.771 111.478 15.1583 114.68 15.1583C118.24 15.1583 120 18.0696 120 20.6427C120 21.3584 119.449 21.8678 118.791 21.8678H111.778C112.051 23.6813 113.344 24.6956 114.998 24.6956C116.079 24.6956 116.925 24.318 117.649 23.7252C117.839 23.5759 118.011 23.4925 118.306 23.4925C118.88 23.4925 119.325 23.936 119.325 24.5244C119.325 24.8405 119.175 25.1128 118.985 25.306C117.966 26.2149 116.696 26.7814 114.958 26.7814H114.954ZM117.499 20.1773C117.327 18.5306 116.352 17.244 114.658 17.244C113.092 17.244 111.989 18.4472 111.756 20.1773H117.499Z" fill="#150D00"></path><g class="cup"><path d="M23.5537 11.3748V28.4838C23.5513 28.6005 23.525 28.7157 23.4766 28.8286C22.8828 30.2133 18.9376 31.2833 14.1602 31.2833C9.38291 31.2833 5.43767 30.2133 4.84391 28.8286C4.79502 28.7157 4.76917 28.6005 4.76682 28.4838V11.3753" fill="#EFDDC9"></path><path d="M23.5537 11.3748V28.4838C23.5513 28.6005 23.525 28.7157 23.4766 28.8286C22.8828 30.2133 18.9376 31.2833 14.1602 31.2833C9.38291 31.2833 5.43767 30.2133 4.84391 28.8286C4.79502 28.7157 4.76917 28.6005 4.76682 28.4838V11.3753" stroke="black" stroke-width="2" stroke-miterlimit="10"></path><path d="M23.5537 15.3005C26.6855 15.3005 29.2247 17.7691 29.2247 20.814C29.2247 23.8588 26.6855 26.3275 23.5537 26.3275" stroke="black" stroke-width="2" stroke-miterlimit="10"></path><path d="M14.1602 13.3377C19.3481 13.3377 23.5537 12.5216 23.5537 11.5151C23.5537 10.5085 19.3481 9.69244 14.1602 9.69244C8.9724 9.69244 4.76682 10.5085 4.76682 11.5151C4.76682 12.5216 8.9724 13.3377 14.1602 13.3377Z" fill="var(--highlight)" stroke="black" stroke-width="2" stroke-miterlimit="10"></path><path d="M10.9356 23.9929C10.9356 24.9219 10.1822 25.6753 9.25324 25.6753C8.32423 25.6753 7.57083 24.9219 7.57083 23.9929" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"></path><path d="M11.0181 1C10.4523 1.84651 10.5573 2.97163 11.2696 3.69991C11.9594 4.40541 12.082 5.48693 11.5673 6.32762" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"></path><path d="M17.0799 1C16.5141 1.84651 16.6191 2.97163 17.3314 3.69991C18.0212 4.40541 18.1438 5.48693 17.6291 6.32762" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"></path></g><g class="logo-eyes"><path d="M15.1417 20.6281C15.916 20.6281 16.5437 20.0004 16.5437 19.2261C16.5437 18.4518 15.916 17.8241 15.1417 17.8241C14.3674 17.8241 13.7397 18.4518 13.7397 19.2261C13.7397 20.0004 14.3674 20.6281 15.1417 20.6281Z" fill="black"></path><path d="M1.40201 18.9457C2.17631 18.9457 2.80401 18.318 2.80401 17.5437C2.80401 16.7694 2.17631 16.1417 1.40201 16.1417C0.6277 16.1417 0 16.7694 0 17.5437C0 18.318 0.6277 18.9457 1.40201 18.9457Z" fill="black"></path></g></svg></a><div class="navbar-actions"><a aria-label="View all collections" class="navbar-item collection-icon" href="https://xrp.cafe/collections"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1H20"></path><path d="M1 8H20"></path><path d="M1 15H20"></path></svg></a><a class="navbar-item chart-icon" href="https://xrp.cafe/stats"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.2 18H19.0667" stroke="var(--accent-text)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 16.4L7.33333 7.86667L13.2 11.0667L19.0667 2" stroke="var(--accent-text)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></a><a role="button" class="navbar-item search-icon"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9.07305" cy="8.59323" r="6.64099" stroke="var(--accent-text)" stroke-width="3"></circle><path d="M15.714 15.2342L19.4321 18.9522" stroke="var(--accent-text)" stroke-width="3" stroke-linecap="round"></path></svg></a></div><a role="button" class="navbar-burger button " aria-label="menu" aria-expanded="false" data-target="navbarMain"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1.5H16.5" stroke="var(--accent-text)" stroke-width="3" stroke-linecap="round"></path><path d="M1.5 8.5H16.5" stroke="var(--accent-text)" stroke-width="3" stroke-linecap="round"></path><path d="M1.5 15.5H16.5" stroke="var(--accent-text)" stroke-width="3" stroke-linecap="round"></path></svg></a><div class="navbar-user"><button class="xrpl-wallet-connect connect-button button is-small- is-rounded" aria-label="menu">Connect</button></div></div><div id="navbarMain" class="navbar-menu  "><div class="navbar-start"><a class="navbar-item navbar-links" href="https://xrp.cafe/collections"><div class="icon"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect width="176" height="176" x="48" y="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" rx="20" ry="20"></rect><rect width="176" height="176" x="288" y="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" rx="20" ry="20"></rect><rect width="176" height="176" x="48" y="288" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" rx="20" ry="20"></rect><rect width="176" height="176" x="288" y="288" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" rx="20" ry="20"></rect></svg></div> <!-- -->Collections</a><a class="navbar-item navbar-links" href="https://xrp.cafe/stats">Stats</a><a class="navbar-item navbar-links" href="https://xrp.cafe/create">Create</a><a class="navbar-item navbar-links" href="https://xrp.cafe/drops">Drops</a><div id="navbar_dropdown" class="navbar-item has-dropdown is-hoverable- is-active- "><a role="button" class="navbar-link dropdown-button"></a><div class="navbar-dropdown"><a href="https://xrp.cafe/launch" class="navbar-item">Launchpad</a><a href="https://xrp.cafe/auctions" class="navbar-item">Auctions</a><a href="https://xrp.cafe/info" class="navbar-item">Info</a><a href="https://xrp.cafe/about" class="navbar-item">About the cafe</a><hr class="navbar-divider"><a role="button" class="navbar-item is-flex is-align-items-center"><svg class="mr mr-2" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9788 8.24649C11.3652 8.18589 10.7479 8.31643 10.2113 8.62024C9.67477 8.92405 9.24524 9.38627 8.98154 9.94363C8.71783 10.501 8.63285 11.1262 8.73822 11.7338C8.8436 12.3413 9.13418 12.9014 9.57017 13.3374C10.0062 13.7734 10.5663 14.0639 11.1738 14.1693C11.7813 14.2747 12.4066 14.1897 12.9639 13.926C13.5213 13.6623 13.9835 13.2328 14.2873 12.6962C14.5911 12.1597 14.7217 11.5423 14.6611 10.9287C14.592 10.2409 14.2872 9.59805 13.7983 9.10921C13.3095 8.62037 12.6667 8.31558 11.9788 8.24649ZM19.1798 11.2227C19.1778 11.5477 19.154 11.8723 19.1083 12.1942L21.2209 13.8512C21.3129 13.9274 21.3748 14.0338 21.3958 14.1515C21.4168 14.2691 21.3954 14.3903 21.3354 14.4937L19.3368 17.9516C19.2761 18.054 19.1812 18.1316 19.0689 18.1708C18.9565 18.2101 18.834 18.2084 18.7227 18.1661L16.6246 17.3213C16.5089 17.2752 16.3836 17.2585 16.2599 17.2728C16.1361 17.2871 16.0179 17.3318 15.9157 17.403C15.5955 17.6235 15.259 17.8194 14.9092 17.989C14.7992 18.0425 14.7041 18.1222 14.6322 18.2211C14.5603 18.3201 14.5139 18.4352 14.497 18.5563L14.1826 20.7942C14.1619 20.9123 14.1008 21.0197 14.0098 21.0978C13.9188 21.176 13.8034 21.2201 13.6835 21.2227H9.68629C9.56832 21.2206 9.45456 21.1784 9.36376 21.1031C9.27296 21.0278 9.21053 20.9237 9.18676 20.8082L8.87274 18.5736C8.85511 18.4511 8.80749 18.3349 8.73412 18.2353C8.66075 18.1357 8.5639 18.0557 8.45218 18.0026C8.10275 17.8339 7.7674 17.6375 7.44938 17.4152C7.34755 17.3443 7.2297 17.2999 7.10644 17.286C6.98318 17.272 6.85838 17.289 6.7433 17.3353L4.64564 18.1797C4.53447 18.222 4.41194 18.2237 4.29961 18.1846C4.18729 18.1454 4.09239 18.0679 4.03162 17.9656L2.03302 14.5077C1.97293 14.4044 1.95146 14.2831 1.97243 14.1654C1.99339 14.0478 2.05543 13.9414 2.14751 13.8652L3.93302 12.4633C4.03084 12.3857 4.10772 12.2848 4.15668 12.1699C4.20565 12.055 4.22514 11.9297 4.21339 11.8054C4.19657 11.6105 4.18629 11.4161 4.18629 11.2213C4.18629 11.0264 4.19611 10.8348 4.21339 10.6442C4.22385 10.5206 4.20341 10.3963 4.15389 10.2826C4.10438 10.1689 4.02735 10.0693 3.92975 9.99275L2.14517 8.59088C2.05459 8.51429 1.99386 8.40826 1.97361 8.29138C1.95336 8.1745 1.97489 8.05423 2.03442 7.95163L4.03302 4.49368C4.09372 4.39134 4.18859 4.31371 4.30092 4.27447C4.41325 4.23523 4.53582 4.23691 4.64704 4.2792L6.74517 5.12406C6.86087 5.17013 6.9862 5.18677 7.10991 5.1725C7.23363 5.15823 7.35187 5.11348 7.45405 5.04228C7.77426 4.82178 8.11074 4.62589 8.46059 4.4563C8.57058 4.40284 8.66572 4.32313 8.7376 4.22419C8.80948 4.12525 8.85589 4.01014 8.87274 3.88901L9.18723 1.65116C9.20788 1.53297 9.26894 1.42563 9.35997 1.34747C9.451 1.26932 9.56634 1.2252 9.68629 1.22266H13.6835C13.8015 1.2247 13.9152 1.26686 14.006 1.3422C14.0968 1.41755 14.1592 1.52157 14.183 1.63714L14.497 3.87172C14.5147 3.99418 14.5623 4.11039 14.6357 4.21001C14.709 4.30963 14.8059 4.38958 14.9176 4.44275C15.267 4.61142 15.6024 4.80784 15.9204 5.03013C16.0222 5.10098 16.1401 5.14538 16.2633 5.15933C16.3866 5.17328 16.5114 5.15634 16.6265 5.11004L18.7241 4.26565C18.8353 4.22332 18.9578 4.22157 19.0702 4.26072C19.1825 4.29987 19.2774 4.37741 19.3382 4.47967L21.3368 7.93761C21.3968 8.04092 21.4183 8.16221 21.3974 8.27987C21.3764 8.39753 21.3143 8.50393 21.2223 8.58013L19.4368 9.982C19.3385 10.0594 19.2612 10.1601 19.2118 10.2751C19.1624 10.39 19.1426 10.5154 19.154 10.6399C19.1695 10.8334 19.1798 11.0278 19.1798 11.2227Z" stroke="var(--neutral-darkest)" stroke-width="2"></path></svg><span>Settings</span></a></div><div class="buttons is-hidden-tablet"><button id="close_menu" class="button is-white">Close</button></div></div><div class="search-input"><div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-1" aria-expanded="false"><input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" class="input my my-2 is-rounded" placeholder="search" id="2343434343" value=""><div id="react-autowhatever-1" role="listbox" class="results-preview"></div></div></div><div class="search-input-pad"></div></div></div></nav><div class="fixed-nav-pad"></div><div id="modal_qr" class="modal sign-in is-small "><div class="modal-background"></div><div class="modal-content"><div class="box"><section class="accordions"><article class="accordion sign-wallets is-active"><div class="accordion-header"><button class="xrpl-wallet-connect toggle button is-fullwidth" aria-label="toggle">Connect wallet</button></div><div class="accordion-body"><div class="buttons"> <button class="button has-icon"><svg width="30px" height="30px" viewBox="0 0 824 618" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="YourIconGradient" cx="13.2793" cy="609.416" r="1" gradientTransform="matrix(512 0 0 -512 -6643 312330)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5D9DF6"></stop><stop offset="1" stop-color="#006FFF"></stop></radialGradient></defs><path fill-rule="evenodd" clip-rule="evenodd" fill="url(#YourIconGradient)" d="M412,53c141.4,0,256,114.6,256,256S553.4,565,412,565S156,450.4,156,309S270.6,53,412,53z"></path><path fill="#FFFFFF" d="M318.7,250.7c51.5-50.3,135.1-50.3,186.6,0l6.2,6.1c2.6,2.5,2.6,6.6,0,9.1l-21.2,20.7c-1.3,1.3-3.4,1.3-4.7,0    l-8.5-8.3c-36-35.1-94.2-35.1-130.2,0l-9.1,8.9c-1.3,1.3-3.4,1.3-4.7,0l-21.2-20.7c-2.6-2.5-2.6-6.6,0-9.1L318.7,250.7z    M549.2,293.5l18.9,18.4c2.6,2.5,2.6,6.6,0,9.1l-85.1,83.1c-2.6,2.5-6.8,2.5-9.3,0c0,0,0,0,0,0l-60.4-59c-0.6-0.6-1.7-0.6-2.3,0    c0,0,0,0,0,0l-60.4,59c-2.6,2.5-6.8,2.5-9.3,0c0,0,0,0,0,0L255.9,321c-2.6-2.5-2.6-6.6,0-9.1l18.9-18.4c2.6-2.5,6.8-2.5,9.3,0    l60.4,59c0.6,0.6,1.7,0.6,2.3,0c0,0,0,0,0,0l60.4-59c2.6-2.5,6.8-2.5,9.3,0c0,0,0,0,0,0l60.4,59c0.6,0.6,1.7,0.6,2.3,0l60.4-59    C542.4,291,546.6,291,549.2,293.5L549.2,293.5z"></path></svg></button><button class="button has-icon"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.89694 13.0951L10.1445 15.3708C10.6305 15.8584 10.8735 16.2783 10.8735 16.6305C10.8735 16.9691 10.6305 17.3823 10.1445 17.8699C9.65857 18.344 9.24684 18.581 8.90937 18.581C8.5719 18.581 8.16017 18.3372 7.6742 17.8496L5.44685 15.5943L3.19926 17.8496C2.71332 18.3372 2.30159 18.581 1.96411 18.581C1.64013 18.581 1.22841 18.344 0.728949 17.8699C0.242982 17.3823 0 16.9691 0 16.6305C0 16.2783 0.242982 15.8584 0.728949 15.3708L2.97655 13.0951L0.728949 10.8195C0.242982 10.3318 0 9.91869 0 9.58007C0 9.22787 0.242982 8.80796 0.728949 8.32033C1.22841 7.83269 1.64013 7.58887 1.96411 7.58887C2.30159 7.58887 2.71332 7.83269 3.19926 8.32033L5.44685 10.596L7.6742 8.32033C8.16017 7.83269 8.5719 7.58887 8.90937 7.58887C9.24684 7.58887 9.65857 7.83269 10.1445 8.32033C10.6305 8.80796 10.8735 9.22787 10.8735 9.58007C10.8735 9.91869 10.6305 10.3318 10.1445 10.8195L7.89694 13.0951Z" fill="var(--neutral-darkest)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M25.3662 7.4988C26.1569 8.21158 26.2157 9.4254 25.4972 10.2099L18.9467 17.3636C18.5855 17.7581 18.075 17.9858 17.5379 17.9921C17.0004 17.9984 16.4848 17.7826 16.1142 17.3966L12.5971 13.7326C11.8603 12.965 11.8902 11.7501 12.6637 11.0191C13.4373 10.2881 14.6619 10.3177 15.3985 11.0853L17.4815 13.2553L22.6338 7.62874C23.3521 6.8442 24.5756 6.78602 25.3662 7.4988Z" fill="var(--neutral-darkest)"></path></svg></button><button class="button has-icon"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.02041 1.00009L1.17578 2.84363C1.17578 2.84363 5.57452 7.59427 5.57452 13.1532C5.57452 18.7122 1.20416 22.9665 1.20416 22.9665L3.04879 24.81C3.04879 24.81 7.87321 20.4139 13.0949 20.4139C18.3167 20.4139 23.1411 24.8242 23.1411 24.8242L24.9857 22.9807C24.9857 22.9807 20.5586 17.9748 20.5586 12.6994C20.5586 7.4241 24.9999 2.84363 24.9999 2.84363L23.1553 1.00009C23.1553 1.00009 18.6572 5.41039 13.0949 5.41039C7.53267 5.41039 3.02041 1.00009 3.02041 1.00009Z" stroke="#F73B3A" stroke-width="1.75" stroke-linejoin="round"></path></svg></button><button class="button has-icon"><svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 26.26 0 11.2h26L13 26.26Z" fill="#00A8EA"></path><path d="M21.83 3.1H4.17L0 11.2h26l-4.17-8.1Z" fill="#33D3F4"></path><path d="M13 26.26 8.28 11.2h9.44L13 26.26ZM9.13 9.18 5.4 3.1H13L9.13 9.18Zm7.54 0L13 3.1h7.59l-3.92 6.08Z" fill="#40EEFF"></path><path d="M3.82 3.88 1.88 3.1l1.94-.77L4.47 0l.64 2.32 1.94.77-1.94.78-.64 2.32-.65-2.31Zm18.36 7.56-1.24-.48 1.24-.53.44-1.5.4 1.5 1.24.53-1.24.47-.4 1.5-.44-1.49Z" fill="#fff"></path><path opacity=".2" d="M14.24 3.1 3.82 15.67l-.9-1L12.56 3.1h1.69Zm5.85 0L6.8 19.06l-2.07-2.38L15.97 3.1h4.12Z" fill="#fff"></path></svg></button>  </div></div></article><article class="accordion sign-social "><div class="accordion-header"><button class="toggle button is-fullwidth" aria-label="toggle">Social</button></div><div class="accordion-body"><div class="buttons"><div class="notification is-warning">The Kaiju social wallet feature was sun-setted on 2/1/2025 because of technical limitations. Please use the Kaiju site to &nbsp;<a href="https://wallet.kaiju3d.com/login">transfer your funds</a> to another wallet such as <a href="https://gemwallet.app/">Gem wallet</a> or <a href="https://crossmark.io/">Crossmark wallet</a></div></div></div></article></section><p class="mt mt-4">By continuing you agree to xrp.cafe's <a href="https://xrp.cafe/terms">Terms of Service</a> and <a href="https://xrp.cafe/privacy">Privacy Policy</a>.</p><p class="mt mt-4"><a class="mt mt-4" href="https://xrp.cafe/info/connecting-to-xrp-cafe">More info and downloads</a></p></div></div><button class="modal-close is-large" aria-label="close"></button></div></header><main style="width:100%;height:100%"><div class=""><main class="collection-landing"><section class="section hero is-primary collection-hero is-medium"><div id="modal_verified" class="modal "><div class="modal-background"></div><div class="modal-content"><div class="box p p-6"><div class="columns"><div class="column is-size-1 is-2"><div class="is-middle"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M479.07 111.36l-.79-12.53-12.36-2.21c-86.5-15.52-122.61-26.74-203.33-63.2l-6.59-3-6.59 3C168.69 69.88 132.58 81.1 46.08 96.62l-12.36 2.21-.79 12.53c-3.85 61.11 4.36 118.05 24.43 169.24A349.47 349.47 0 00129 393.11c53.47 56.73 110.24 81.37 121.07 85.73l6 2.41 6-2.41c10.83-4.36 67.6-29 121.07-85.73a349.47 349.47 0 0071.5-112.51c20.07-51.19 28.28-108.13 24.43-169.24zm-252.91 216L153.37 256l22.4-22.86 48.47 47.49 110.13-127.2 24.2 20.94z"></path></svg></div></div><div class="column content"><p class="is-size-6">This collection has verified their Twitter account and has significant interest from the XRPL community.</p></div></div></div></div><button class="modal-close is-large" aria-label="close"></button></div><div id="model_richList" class="modal "><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">xSPECTAR Jetwings <!-- -->holders</p><button class="button is-icon option-top"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.38908 9.38908L1.61091 1.61091" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.6109 9.38908L9.38908 1.61091" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></header><section class="modal-card-body"><button class="button">Download CSV - Full List</button><table class="table is-fullwidth is-nowrap mt mt-3"><thead><tr><th>Rank</th><th># <!-- -->Owned</th><th>Owner</th></tr></thead><tbody></tbody></table></section></div><button class="modal-close is-large" aria-label="close"></button></div><div id="modal_derivative" class="modal "><div class="modal-background"></div><div class="modal-content"><div class="box p p-6"><div class="columns"><div class="column is-size-1 is-2"><div class="is-middle"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><rect width="336" height="336" x="128" y="128" fill="none" stroke-linejoin="round" stroke-width="32" rx="57" ry="57"></rect><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M383.5 128l.5-24a56.16 56.16 0 00-56-56H112a64.19 64.19 0 00-64 64v216a56.16 56.16 0 0056 56h24"></path></svg></div></div><div class="column content"><p class="is-size-6">The community has identified this collection as a derivative collection. Derivatives can be viewed as positive homages to other collections or fake imitations. Please do your own research before trading.</p></div></div></div></div><button class="modal-close is-large" aria-label="close"></button></div><div class="container"><div class="columns"><div class="column is-4"><div class="is-middle is-vert"><img class="collection-thumbnail is-trans" alt="" src="ea9397988218-402f-b7a0-8f8ac13883f8.webp"></div></div><div class="column has-text-centered-mobile"><div><h1 class="title is-3 is-marginless" data-label="xSPECTAR Jetwings">xSPECTAR Jetwings</h1><ul class="collection-info"><li><a href="https://x.com/xSPECTAR" target="_window">@xSPECTAR</a></li><li><a target="_window" href="https://xspectar.com/">https://xspectar.com</a></li><li>   <a role="button">Verified <span class="icon"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M479.07 111.36l-.79-12.53-12.36-2.21c-86.5-15.52-122.61-26.74-203.33-63.2l-6.59-3-6.59 3C168.69 69.88 132.58 81.1 46.08 96.62l-12.36 2.21-.79 12.53c-3.85 61.11 4.36 118.05 24.43 169.24A349.47 349.47 0 00129 393.11c53.47 56.73 110.24 81.37 121.07 85.73l6 2.41 6-2.41c10.83-4.36 67.6-29 121.07-85.73a349.47 349.47 0 0071.5-112.51c20.07-51.19 28.28-108.13 24.43-169.24zm-252.91 216L153.37 256l22.4-22.86 48.47 47.49 110.13-127.2 24.2 20.94z"></path></svg></span></a></li></ul><p id="collection_description" class="is-clamped">The xSPECTAR Jetwings collection introduces the first generation of aero-quantum personal propulsion systems designed for the xSPECTARverse. Three tiers - each infused with its own material signature, thruster configuration, and propulsion tier. This isn’t a cosmetic toy. It’s vertical freedom, encoded on-chain.</p><ul class="collection-info"><li style="min-width:400px;max-width:425px">rGqGAQ3RQgH5UkcDM8fqvZ855HZphMeUHH</li></ul><div class="stats"><div class="tag is-medium"><span>Floor</span> <span>54.0<!-- --> xrp</span></div><div class="tag is-medium"><span>Items</span> <span>479</span></div><div class="tag is-medium"><span>Total volume</span> <span>3.0k<!-- --> xrp</span></div><div class="tag is-medium"><span>Holders</span> <span>171</span></div><div class="tag is-medium"><span>Listed</span> <span>11.06%</span></div></div><div class="mint-control"><ul class="help"><li>49 XRP </li><li>99% of 888 minted</li></ul><progress class="progress is-success" value="99" max="100"></progress><button class="xrpl-wallet-connect button is-medium is-success">Mint</button></div></div></div></div></div><div class="actions"><a role="button" id="view_chart" class="icon-base" title="View collection insights"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 16H17"></path><path d="M1 14.5L6 6.5L11.5 9.5L17 1"></path></svg></a><a role="button" id="view_chart" class="icon-base" title="View collection insights"><svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8813 9.11805L13.7231 2.63265C13.626 2.08897 13.1066 1.72693 12.5629 1.82402L5.69892 3.04979C5.14481 3.14874 4.78151 3.68534 4.89541 4.23657L5.97882 9.4797" stroke-width="2"></path><path d="M1.14062 11.2893C1.625 10.883 2.56562 9.84554 3.76562 9.44554C4.65158 9.15022 7.53404 9.01282 8.92188 9.21111C9.6875 9.3205 10.7024 10.0944 10.8125 11.2893C10.9219 12.4768 9.79688 13.5705 9 13.5705H6.75M2.23438 20.3518L4 18.7893H8.8125C9.78125 18.7893 10.8125 18.3726 11.6406 17.8205C12.8406 17.0205 15.8906 14.034 16.8906 12.8674C17.3649 12.314 17.7578 10.8127 16.7969 9.85175C15.8906 8.9455 14.4062 8.96108 13.5625 9.6955L10.1511 13.0191" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></div><div class="tab tabs is-boxed is-medium"><div class="hero-footer"><ul><li class="tablinks is-active"><a role="button">NFTs</a></li><li class="tablinks "><a role="button">Activity</a></li></ul></div></div></section><div id="modal_quest_claim" class="modal "><div class="modal-background"></div><div class="modal-card"><div class="modal-card-body has-text-centered"><div class="p p-2"><h3 class="title is-3 is-marginless-">Congrats!</h3><p class="">You qualify for a free NFT, you may mint it here at any time. Here is more information about <a href="https://xrp.cafe/info/how-to-use-xrp-cafe">setting up a wallet and minting</a> on xrp.cafe.</p></div><img class="p p-4" width="250" alt="" src="ea9397988218-402f-b7a0-8f8ac13883f8.webp"><div><button class="button is-small m m-4 is-white">Close</button></div></div><button class="modal-close is-large" aria-label="close"></button></div></div><div id="modal_mint" class="modal "><div class="modal-background"></div><div class="modal-card"><section class="modal-card-body"><div class="columns"><div class="column"><div class="field"><label class="label">Amount to mint</label><div class="control is-flex is-align-items-center"><input id="inputField" class="input" type="number" min="1" placeholder="amount" value="1"></div></div></div><div class="column"><label class="label">Total cost</label><div class="total-cost"><div id="outputDiv" class="mr mr-2">0</div><div></div></div></div></div></section><footer class="modal-card-foot"><button class="button is-primary is-medium is-fullwidth ">Mint Now</button><button class="button is-medium is-fullwidth">Cancel</button></footer></div><button class="modal-close is-large" aria-label="close"></button></div><div id="alp_modal_mint" class="modal "><div class="modal-background"></div><div class="modal-card"><section class="modal-card-body"><div class="columns"><div class="column"><div class="field"><label class="label">Amount to mint</label><div class="control is-flex is-align-items-center"><input id="inputField" class="input" type="number" min="1" placeholder="amount" value="1"></div></div></div><div class="column"><label class="label">Total cost</label><div class="total-cost"><div id="outputDiv" class="mr mr-2">49</div><div>XRP</div></div></div></div></section><footer class="modal-card-foot"><button class="button is-primary is-medium is-fullwidth ">Mint Now</button><button class="button is-medium is-fullwidth">Cancel</button></footer></div><button class="modal-close is-large" aria-label="close"></button></div><div id="_rht_toaster" style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div><section id="thumbs" class="section tabcontent " style="display: block;"><div class="is-grid"><div id="explore_nav" class="explore-nav "><div><button id="go-top" class="button is-icon go-top" title="Go to top"><svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 8L5 1M5 1L9.5 5M5 1L1 5"></path><path d="M5 12L5 11"></path></svg></button><div class="select"> <select><option value="low" selected="">Price Low</option><option value="high">Price high</option><option value="recently minted">Recent Mints</option><option value="recently listed">Recently Listed</option><option value="A-Z">A-Z</option><option value="Z-A">Z-A</option><option value="most liked">Most Liked</option></select></div><div class="is-flex"><button class="button is-icon" title="Filter"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 2.787H16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 8.787H16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1 14.787H16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="5" cy="8.787" r="2" fill="var(--neutral-darkest)"></circle><circle cx="12" cy="2.787" r="2" fill="var(--neutral-darkest)"></circle><circle cx="12" cy="14.787" r="2" fill="var(--neutral-darkest)"></circle><circle cx="12" cy="14.787" r="1" fill="var(--neutral-lightest)"></circle><circle cx="5" cy="8.787" r="1" fill="var(--neutral-lightest)"></circle><circle cx="12" cy="2.787" r="1" fill="var(--neutral-lightest)"></circle></svg></button></div><div id="sweep_floor" class="sweep "><input class="range" type="range" min="1" max="20" id="myRange" value="1"><div><button class="button is-primary">1 - 0.00 XRP</button></div></div></div></div><div id="modal_sweep" class="modal "><div class="modal-background"></div><div class="modal-card"><section class="modal-card-body"><div class="notification"><p>Note - NFTs on the XRPL must be signed individually. To avoid this extra step try our <a href="https://xrp.cafe/cubby">Cubby companion app</a> for one step bulk purchases.</p></div><p class="title is-5 is-marginless">Sweep total: 0.00 XRP for 1 NFTs</p><div class="mt mt-4"><label class="checkbox"><input id="agree" type="checkbox">Use Cubby app<span class="checkmark"></span></label><a href="https://xrp.cafe/cubby"> more info</a></div></section><footer class="modal-card-foot"><button class="button is-primary is-medium is-fullwidth">Continue</button><button class="button is-medium is-fullwidth">Cancel</button></footer></div></div></div><div><div id="panel_filter_collection" class="modal is-panel .panel_filter_collection  "><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Filters</p></header><section class="modal-card-body"><div class="tags"></div><div class="price-range"><div class="price-input"><div class="field"><span>Min</span><input type="number" class="input-min" value="0"></div><div class="field"><span>Max</span><input type="number" class="input-max" value="5899"></div></div><div class="range-slider"><div class="range-progress"></div></div><div class="range-input"><input type="range" class="range-min" min="0" max="5898" step="1" value="0"><input type="range" class="range-max" min="1" max="5899" step="1" value="5899"></div></div><section class="accordions"><article class="accordion "><div class="accordion-header"><button class="toggle button is-fullwidth" aria-label="toggle">Status</button></div><div class="accordion-body"><ul><li><label class="checkbox" for="check1a"><input id="check1a" type="checkbox">Buy Now<span class="checkmark"></span></label></li><li><label class="checkbox" for="check2a"><input id="check2a" type="checkbox">Auctions<span class="checkmark"></span></label></li></ul></div></article><article class="accordion is-properties is-active"><div class="accordion-header"><button class="toggle button is-fullwidth" aria-label="toggle">Properties</button></div><div class="accordion-body"><input class="input" type="text" placeholder="Search" value=""><ul class="item-traits"><li><div role="button">Jetwing<span class="trait-count">3</span></div><ul class=""><li><label class="checkbox" for="JetwingMach III"><input id="JetwingMach III" type="checkbox">Mach III<span class="checkmark"></span><span>9.39%</span></label></li><li><label class="checkbox" for="JetwingMach II"><input id="JetwingMach II" type="checkbox">Mach II<span class="checkmark"></span><span>27.56%</span></label></li><li><label class="checkbox" for="JetwingMach I"><input id="JetwingMach I" type="checkbox">Mach I<span class="checkmark"></span><span>63.05%</span></label></li></ul></li></ul></div></article></section></section><footer class="modal-card-foot"><button class="button is-fullwidth">Clear</button><button class="button is-fullwidth">Continue</button></footer></div></div><div class="infinite-scroll-component__outerdiv"><div class="infinite-scroll-component " style="height: auto;"><div class="card-list"><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D06A48A74057F81CF"><div class="card-image" style="background-color: transparent;"> <img src="666eb13fb3ad-4caf-bc2c-eb9c249aa84b6c98f40b1fe7-41b1-9103-9a07eb5e9b05873406dbd675-4ec8-a0e9-bd69fcb6c3fa.webp" alt="Jetwing #69"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #69</p></div><div class="card-content-middle"><p class="card-price">20 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D196A5668057F81DB"><div class="card-image" style="background-color: transparent;"> <img src="3a0e823ba8a4-4be7-9435-82d6654f60f69835be9b041f-4946-bbd5-11900279b468f0e8c3c4a996-44e8-9773-7ed9a8ed265a.webp" alt="Jetwing #10"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #10</p></div><div class="card-content-middle"><p class="card-price">20 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D70E1959B057F81EA"><div class="card-image" style="background-color: transparent;"> <img src="a24a6c79bf43-4a3c-811c-4614e1328eca6b0650cef030-40b9-8316-fe21c8164111fba4ef4a8638-456b-9c7b-33e406a4bd16.webp" alt="Jetwing #53"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #53</p></div><div class="card-content-middle"><p class="card-price">20 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D4D304A34057F818F"><div class="card-image" style="background-color: transparent;"> <img src="e7a206b9d5f4-461f-9577-928c068ad9bf811e6eb48ce4-4119-981f-92f925227b1af4cd7f833d45-4571-ac9c-53d27575b046.webp" alt="Jetwing #524"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #524</p></div><div class="card-content-middle"><p class="card-price">21.98 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D966D2D83057F8202"><div class="card-image" style="background-color: transparent;"> <img src="9d7558621f0b-4333-8be2-e805662845de1df282f03343-43e5-a387-59070ddc6b1b3524bbca9743-4bec-b16f-59514f4238bd.webp" alt="Jetwing #249"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #249</p></div><div class="card-content-middle"><p class="card-price">21.98 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D893647D6057F812D"><div class="card-image" style="background-color: transparent;"> <img src="885edecc2f54-46de-a695-dfeb186ee380c07ef9f2a0d7-4f0f-85c6-0a5704dff760e8f4a0c4f04c-4ec5-89b9-04ed0d033917.webp" alt="Jetwing #320"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #320</p></div><div class="card-content-middle"><p class="card-price">24 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D137004DA057F8229"><div class="card-image" style="background-color: transparent;"> <img src="c34622e6ae49-493f-ad92-247dd4efe46554e5729d5945-4ad6-afe9-e8a994b93ac3204f36a77b6f-4cad-b8fb-3d30221fc491.webp" alt="Jetwing #27"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #27</p></div><div class="card-content-middle"><p class="card-price">24 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D582177D9057F822C"><div class="card-image" style="background-color: transparent;"> <img src="bcd120e5e64f-4ddf-86b5-209292dbff3c73a1d78de835-49a2-8f0c-f551720ef9520263a44e9430-41b1-afd8-4890fb7d8399.webp" alt="Jetwing #438"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #438</p></div><div class="card-content-middle"><p class="card-price">24 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D6E3071CC057F8137"><div class="card-image" style="background-color: transparent;"> <img src="eec4791a063c-45e2-9e36-5391c57a2e4facc8eaf92c17-413f-bd56-d00fed0e860bbde9b84149ca-4e36-bec2-fd32f612936c.webp" alt="Jetwing #227"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #227</p></div><div class="card-content-middle"><p class="card-price">24.95 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996DBCFC3B62057F80E1"><div class="card-image" style="background-color: transparent;"> <img src="f62da3319d93-41c6-acdb-4c94f08d066ef0bfd0e58457-4b4f-9c4c-3513c7a1522f48cb0babc12c-435f-a23f-5437d129c97a.webp" alt="Jetwing #531"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #531</p></div><div class="card-content-middle"><p class="card-price">30 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996DC781FD80057F8103"><div class="card-image" style="background-color: transparent;"> <img src="f04eef476d27-43c1-aa8c-950ac0391016eaadd7e1d42e-4b71-b0cf-09ac3c19bd378da00ce561fb-47bc-a919-08bc54960d95.webp" alt="Jetwing #178"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #178</p></div><div class="card-content-middle"><p class="card-price">30 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996DB09C2C83057F8102"><div class="card-image" style="background-color: transparent;"> <img src="ee8602de6fc9-44be-a7cc-3a233f3dc6ed6c16dcb38af7-4345-bc23-e8781c822d6bf1dc65a1a677-41a8-98ba-abf436602ae2.webp" alt="Jetwing #191"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #191</p></div><div class="card-content-middle"><p class="card-price">30 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996DA261D11F057F8166"><div class="card-image" style="background-color: transparent;"> <img src="be2b0c6253c9-48b0-aab5-e76b19230691f445b12e6f4e-4cf4-aaae-3754a715370ace2bcfa2893a-4114-b09c-3ce8c2692339.webp" alt="Jetwing #318"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #318</p></div><div class="card-content-middle"><p class="card-price">30 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D5FF61628057F819B"><div class="card-image" style="background-color: transparent;"> <img src="3d85e9313244-4d75-8ff2-902c6df30d97af2d50dfdc11-4511-a963-e33781291ad5b91d5bfa46c9-447d-b826-34a695f3ee74.webp" alt="Jetwing #510"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #510</p></div><div class="card-content-middle"><p class="card-price">30 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D76DBE729057F819C"><div class="card-image" style="background-color: transparent;"> <img src="66ed4b83a8d6-4aaa-9538-a55a8332583e35c7062f95eb-49e5-b30e-10f067533444bfd9e9a35663-4c73-88ca-ce758ab96384.webp" alt="Jetwing #472"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #472</p></div><div class="card-content-middle"><p class="card-price">30 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D8DC1B826057F819D"><div class="card-image" style="background-color: transparent;"> <img src="108bab23ba79-40ca-a531-6d2625933feb736b4e5ea493-4928-b0ae-365368a17a141d50ef46072a-4f8c-9fc0-3530c328e4c2.webp" alt="Jetwing #261"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #261</p></div><div class="card-content-middle"><p class="card-price">30 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996DE958FC22057F81A1"><div class="card-image" style="background-color: transparent;"> <img src="9bef282f911a-4cfe-86f2-237d57887d7d1a6d5a8821cd-4a1f-a821-54e7c6bd59a3a6bf5a475e2e-43b2-8697-0f094b97ee6f.webp" alt="Jetwing #391"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #391</p></div><div class="card-content-middle"><p class="card-price">30 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D97DC0EC1057F8144"><div class="card-image" style="background-color: transparent;"> <img src="efa5e55b67c8-4bdb-b496-24511b06c00a63ec7e9fa268-4a21-aa3d-a4031d1eb1ddf8a5c38b1c98-4796-8de7-c11c786e5ea9.webp" alt="Jetwing #112"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #112</p></div><div class="card-content-middle"><p class="card-price">35 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996DDC8D81FC057F8147"><div class="card-image" style="background-color: transparent;"> <img src="949bee724746-4c83-8114-f121c5b1054e023b55ff8ba9-487a-b482-cf4b88ff82c1008fe46011eb-4dd3-a723-10959ff9ea32.webp" alt="Jetwing #464"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #464</p></div><div class="card-content-middle"><p class="card-price">35 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a><a class="card" href="https://xrp.cafe/nft/00181F40ADAB283F8972AAA140FFD5FB528A39470C05996D0284856B057F81DA"><div class="card-image" style="background-color: transparent;"> <img src="81e209f9ef96-48dd-8cf9-5e0015d988e43027d9d45cbf-46da-8ff9-91819716bb96589e3be9ad77-479a-b67f-2308827218c7.webp" alt="Jetwing #648"> </div><div class="card-content"><div class="card-content-top"><p class="card-name">Jetwing #648</p></div><div class="card-content-middle"><p class="card-price">35 XRP</p></div><div class="card-content-bottom"><div class="buttons"><button class="button is-small is-primary ">Buy Now</button></div></div></div></a></div><div></div></div></div></div></section></main></div></main><footer class="py py-6 footer"><div class="container is-fluid"><div class="columns is-mobile"><div class="column footer-social is-3"><a href="https://twitter.com/xrpcafe"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"></path></svg></a><a href="http://discord.gg/xrpcafe"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M464 66.52A50 50 0 00414.12 17L97.64 16A49.65 49.65 0 0048 65.52V392c0 27.3 22.28 48 49.64 48H368l-13-44 109 100zM324.65 329.81s-8.72-10.39-16-19.32C340.39 301.55 352.5 282 352.5 282a139 139 0 01-27.85 14.25 173.31 173.31 0 01-35.11 10.39 170.05 170.05 0 01-62.72-.24 184.45 184.45 0 01-35.59-10.4 141.46 141.46 0 01-17.68-8.21c-.73-.48-1.45-.72-2.18-1.21-.49-.24-.73-.48-1-.48-4.36-2.42-6.78-4.11-6.78-4.11s11.62 19.09 42.38 28.26c-7.27 9.18-16.23 19.81-16.23 19.81-53.51-1.69-73.85-36.47-73.85-36.47 0-77.06 34.87-139.62 34.87-139.62 34.87-25.85 67.8-25.12 67.8-25.12l2.42 2.9c-43.59 12.32-63.44 31.4-63.44 31.4s5.32-2.9 14.28-6.77c25.91-11.35 46.5-14.25 55-15.21a24 24 0 014.12-.49 205.62 205.62 0 0148.91-.48 201.62 201.62 0 0172.89 22.95s-19.13-18.15-60.3-30.45l3.39-3.86s33.17-.73 67.81 25.16c0 0 34.87 62.56 34.87 139.62 0-.28-20.35 34.5-73.86 36.19z"></path><path d="M212.05 218c-13.8 0-24.7 11.84-24.7 26.57s11.14 26.57 24.7 26.57c13.8 0 24.7-11.83 24.7-26.57.25-14.76-10.9-26.57-24.7-26.57zm88.38 0c-13.8 0-24.7 11.84-24.7 26.57s11.14 26.57 24.7 26.57c13.81 0 24.7-11.83 24.7-26.57S314 218 300.43 218z"></path></svg></a><a role="button" id="settings" class="icon" aria-label="Settings" title="Settings"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9788 8.24649C11.3652 8.18589 10.7479 8.31643 10.2113 8.62024C9.67477 8.92405 9.24524 9.38627 8.98154 9.94363C8.71783 10.501 8.63285 11.1262 8.73822 11.7338C8.8436 12.3413 9.13418 12.9014 9.57017 13.3374C10.0062 13.7734 10.5663 14.0639 11.1738 14.1693C11.7813 14.2747 12.4066 14.1897 12.9639 13.926C13.5213 13.6623 13.9835 13.2328 14.2873 12.6962C14.5911 12.1597 14.7217 11.5423 14.6611 10.9287C14.592 10.2409 14.2872 9.59805 13.7983 9.10921C13.3095 8.62037 12.6667 8.31558 11.9788 8.24649ZM19.1798 11.2227C19.1778 11.5477 19.154 11.8723 19.1083 12.1942L21.2209 13.8512C21.3129 13.9274 21.3748 14.0338 21.3958 14.1515C21.4168 14.2691 21.3954 14.3903 21.3354 14.4937L19.3368 17.9516C19.2761 18.054 19.1812 18.1316 19.0689 18.1708C18.9565 18.2101 18.834 18.2084 18.7227 18.1661L16.6246 17.3213C16.5089 17.2752 16.3836 17.2585 16.2599 17.2728C16.1361 17.2871 16.0179 17.3318 15.9157 17.403C15.5955 17.6235 15.259 17.8194 14.9092 17.989C14.7992 18.0425 14.7041 18.1222 14.6322 18.2211C14.5603 18.3201 14.5139 18.4352 14.497 18.5563L14.1826 20.7942C14.1619 20.9123 14.1008 21.0197 14.0098 21.0978C13.9188 21.176 13.8034 21.2201 13.6835 21.2227H9.68629C9.56832 21.2206 9.45456 21.1784 9.36376 21.1031C9.27296 21.0278 9.21053 20.9237 9.18676 20.8082L8.87274 18.5736C8.85511 18.4511 8.80749 18.3349 8.73412 18.2353C8.66075 18.1357 8.5639 18.0557 8.45218 18.0026C8.10275 17.8339 7.7674 17.6375 7.44938 17.4152C7.34755 17.3443 7.2297 17.2999 7.10644 17.286C6.98318 17.272 6.85838 17.289 6.7433 17.3353L4.64564 18.1797C4.53447 18.222 4.41194 18.2237 4.29961 18.1846C4.18729 18.1454 4.09239 18.0679 4.03162 17.9656L2.03302 14.5077C1.97293 14.4044 1.95146 14.2831 1.97243 14.1654C1.99339 14.0478 2.05543 13.9414 2.14751 13.8652L3.93302 12.4633C4.03084 12.3857 4.10772 12.2848 4.15668 12.1699C4.20565 12.055 4.22514 11.9297 4.21339 11.8054C4.19657 11.6105 4.18629 11.4161 4.18629 11.2213C4.18629 11.0264 4.19611 10.8348 4.21339 10.6442C4.22385 10.5206 4.20341 10.3963 4.15389 10.2826C4.10438 10.1689 4.02735 10.0693 3.92975 9.99275L2.14517 8.59088C2.05459 8.51429 1.99386 8.40826 1.97361 8.29138C1.95336 8.1745 1.97489 8.05423 2.03442 7.95163L4.03302 4.49368C4.09372 4.39134 4.18859 4.31371 4.30092 4.27447C4.41325 4.23523 4.53582 4.23691 4.64704 4.2792L6.74517 5.12406C6.86087 5.17013 6.9862 5.18677 7.10991 5.1725C7.23363 5.15823 7.35187 5.11348 7.45405 5.04228C7.77426 4.82178 8.11074 4.62589 8.46059 4.4563C8.57058 4.40284 8.66572 4.32313 8.7376 4.22419C8.80948 4.12525 8.85589 4.01014 8.87274 3.88901L9.18723 1.65116C9.20788 1.53297 9.26894 1.42563 9.35997 1.34747C9.451 1.26932 9.56634 1.2252 9.68629 1.22266H13.6835C13.8015 1.2247 13.9152 1.26686 14.006 1.3422C14.0968 1.41755 14.1592 1.52157 14.183 1.63714L14.497 3.87172C14.5147 3.99418 14.5623 4.11039 14.6357 4.21001C14.709 4.30963 14.8059 4.38958 14.9176 4.44275C15.267 4.61142 15.6024 4.80784 15.9204 5.03013C16.0222 5.10098 16.1401 5.14538 16.2633 5.15933C16.3866 5.17328 16.5114 5.15634 16.6265 5.11004L18.7241 4.26565C18.8353 4.22332 18.9578 4.22157 19.0702 4.26072C19.1825 4.29987 19.2774 4.37741 19.3382 4.47967L21.3368 7.93761C21.3968 8.04092 21.4183 8.16221 21.3974 8.27987C21.3764 8.39753 21.3143 8.50393 21.2223 8.58013L19.4368 9.982C19.3385 10.0594 19.2612 10.1601 19.2118 10.2751C19.1624 10.39 19.1426 10.5154 19.154 10.6399C19.1695 10.8334 19.1798 11.0278 19.1798 11.2227Z" stroke="white" stroke-width="2"></path></svg></a></div><div class="column footer-links"><a href="https://xrp.cafe/">Home</a><a href="https://xrp.cafe/collections">Collections</a><a href="https://xrp.cafe/about">About</a><a href="https://xrp.cafe/fees">Fees</a><a href="https://xrp.cafe/about#support">Support</a><a href="https://xrp.cafe/privacy">Privacy</a><a href="https://xrp.cafe/terms">Terms</a></div></div></div></footer></div><div id="portal-root"><div id="modal_settings" class="modal settings-panel "><div class="modal-background"></div><div class="modal-card"><div class="modal-card-head"></div><div class="modal-card-body"><div class="field"><label class="label">Vibe</label><div class="control-grid"><label class="radio is-custom">Cozy<input type="radio" name="style" id="cozy_radio" value="cozy"><span class="checkmark"></span></label><label class="radio is-custom">Default<input type="radio" name="style" id="default_radio" value=""><span class="checkmark"></span></label><label class="radio is-custom">Chad<input type="radio" name="style" id="chad_radio" value="chad"><span class="checkmark"></span></label></div><div class="help">Cozy has fewer things, Chad has more things.</div></div><div class="field"><label class="label">Theme</label><div class="control-grid"><label class="radio is-custom">Light<input type="radio" name="radioTheme" value="light"><span class="checkmark"></span></label><label class="radio is-custom">Dark<input type="radio" name="radioTheme" value="dark"><span class="checkmark"></span></label><label class="radio is-custom is-hidden">Mood<input type="radio" name="radioTheme" value="seasonal"><span class="checkmark"></span></label><label class="radio is-custom">System<input type="radio" name="radioTheme" value="system"><span class="checkmark"></span></label></div></div><div class="field"><label class="label">Language</label><div class="control"><div class="select"><select><option value="en" selected="">English</option><option value="es">Español</option><option value="nl">Nederlands</option><option value="ja">日本語</option><option value="ko">한국인</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="ar">عربي</option><option value="hi">हिंदी</option><option value="tl">Tagalog</option><option value="zh">普通话</option><option value="ru">русский</option><option value="pt">portugués</option><option value="el">Ελληνικά</option><option value="fil">pilipino</option><option value="id">bahasa Indonesia</option></select></div></div></div></div><div class="modal-card-foot"><button class="button is-fullwidth is-medium">Done</button></div></div></div></div><next-route-announcer><p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; top: 0px; width: 1px; white-space: nowrap; overflow-wrap: normal;"></p></next-route-announcer><w3m-modal style="--local-border-bottom-mobile-radius: 0px;" data-scrapbook-adoptedstylesheets="0" data-scrapbook-shadowdom="&lt;!----&gt;"></w3m-modal><script data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", k8 = "data-scrapbook-adoptedstylesheets", k9 = /^data-scrapbook-adoptedstylesheet-(\d+)$/, k10 = "data-scrapbook-shadowdom-mode", k11 = "data-scrapbook-shadowdom-clonable", k12 = "data-scrapbook-shadowdom-delegates-focus", k13 = "data-scrapbook-shadowdom-serializable", k14 = "data-scrapbook-shadowdom-slot-assignment", k15 = "data-scrapbook-slot-assigned", k16 = "data-scrapbook-slot-index", k17 = /^scrapbook-slot-index=(\d+)$/, k18 = '/scrapbook-slot-index', d = document, r = d.documentElement, $s = !!r.attachShadow, $as = !!d.adoptedStyleSheets, $c = !!window.HTMLCanvasElement, $sa = !!d.createElement('slot').assign, sle = [], sls = [], slt = function (r) { if ($sa) { var E = r.childNodes, i, e, s, m; for (i = 0; i < E.length; i++) { e = E[i]; if (e.nodeType === 8) { s = e.nodeValue; if (m = s.match(k17)) { s = e.nextSibling; if (s.nodeType === 3) { sls[m[1]] = s; } r.removeChild(e); i--; } else if (s === k18) { r.removeChild(e); i--; } } } } }, sl = function () { var i = sle.length, j, d, e; while (i--) { d = sle[i]; e = d.elem; d = d.value.split(','); j = d.length; while (j--) { d[j] = sls[parseInt(d[j], 10)]; } try { try { e.assign.apply(e, d); } catch (ex) { if (ex.message.includes('must have a callable @@iterator')) { e.assign(d); } else { throw ex; } } } catch (ex) { console.error(ex); } } }, asl = (function (r) { var l = [], E, i, e, m, c, j; if ($as) { E = r.attributes; i = E.length; while (i--) { e = E[i]; if (!(m = e.nodeName.match(k9))) { continue; } c = l[m[1]] = new CSSStyleSheet(); r.removeAttribute(m[0]); m = e.nodeValue.split('\n\n'); j = m.length; while (j--) { try { m[j] && c.insertRule(m[j]); } catch (ex) { console.error(ex); } } } } return l; })(r), as = function (d, e) { var l, i, I; if ($as && (l = e.getAttribute(k8)) !== null) { l = l.split(',').map(i => asl[i]); d.adoptedStyleSheets = d.adoptedStyleSheets.concat(l); e.removeAttribute(k8); } }, fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s, m; while (i--) { e = E[i]; s = e.shadowRoot; if ($s && (d = e.getAttribute(k1))) { if (!s) { try { s = e.attachShadow({ mode: (m = e.getAttribute(k10)) !== null ? m : 'open', clonable: e.hasAttribute(k11), delegatesFocus: e.hasAttribute(k12), serializable: e.hasAttribute(k13), slotAssignment: (m = e.getAttribute(k14)) !== null ? m : void 0, }); s.innerHTML = d; } catch (ex) { console.error(ex); } } e.removeAttribute(k1); e.removeAttribute(k10); e.removeAttribute(k11); e.removeAttribute(k12); e.removeAttribute(k13); e.removeAttribute(k14); } if ($c && (d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if ($sa && (d = e.getAttribute(k15)) !== null) { sle.push({elem: e, value: d}); e.removeAttribute(k15); } if ($sa && (d = e.getAttribute(k16)) !== null) { sls[d] = e; e.removeAttribute(k16); } if (s) { slt(e); as(s, e); fn(s); } } }; as(d, r); fn(d); sl(); })()</script></body></html>
